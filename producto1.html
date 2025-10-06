@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Othan Store</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #f8f9fa;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #000000, #1c1c1c);
+            color: goldenrod;
+        }
+        
+        header img {
+            max-width: 100px;
+            margin: 10px 0;
+        }
+        
+        .acciones a {
+            margin: 10px;
+            text-decoration: none;
+            background-color: goldenrod;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        
+        .acciones a:hover {
+            background: #ffd700;
+            color: #000;
+            transform: scale(1.05);
+        }
+        /* ANUNCIOS SLIDER */
+        
+        .slider {
+            position: relative;
+            width: 50%;
+            max-height: 400px;
+            overflow: hidden;
+        }
+        
+        .slides {
+            display: flex;
+            width: 50%;
+            animation: slide 12s infinite;
+        }
+        
+        .slides img {
+            width: 50%;
+            object-fit: cover;
+        }
+        
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+            30% {
+                transform: translateX(0%);
+            }
+            33% {
+                transform: translateX(-100%);
+            }
+            63% {
+                transform: translateX(-100%);
+            }
+            66% {
+                transform: translateX(-200%);
+            }
+            96% {
+                transform: translateX(-200%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        /* Filtros */
+        
+        .filtros {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            gap: 10px;
+        }
+        
+        .filtros button {
+            padding: 10px 20px;
+            background-color: goldenrod;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        
+        .filtros button:hover {
+            background: #ffd700;
+            transform: scale(1.1);
+        }
+        /* Productos */
+        
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .producto {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            border: 1px solid #444;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        
+        .producto:hover {
+            transform: translateY(-5px);
+            border: 1px solid goldenrod;
+        }
+        
+        .producto img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        
+        .producto h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: goldenrod;
+        }
+        
+        .producto p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #aaa;
+        }
+        
+        footer h2 {
+            color: goldenrod;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 22px;
+            }
+            .filtros button {
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+            .slider {
+                max-height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Bienvenido a Othan Store </h1>
+        <p>Ropa exclusiva con estilo</p>
+        <img src="imga/M.png" alt="Logo de Othan Store">
+        <div class="acciones">
+            <a href="login.html">Registrarte</a>
+            <a href="login1.html">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <!-- SLIDER DE ANUNCIOS -->
+    <section class="slider">
+        <div class="slides">
+            <img src="imga/boss.jpg" alt="Oferta Especial">
+            <img src="imga/M.png" alt="Nueva Colección">
+            <img src="imga/mk blanca.jpg" alt="Descuento Limitado">
+        </div>
+    </section>
+
+    <nav class="filtros">
+        <button>Poleras</button>
+        <button>Chaquetas</button>
+        <button>Buzos</button>
+        <button>Conjuntos</button>
+        <button>Zapatillas</button>
+    </nav>
+
+    <main>
+        <section class="productos" id="productos">
+            <!-- Los productos se cargarán con JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho por Othan</p>
+        <h2>Buenas tardes</h2>
+        <p>📩 contacto@othanstore.cl</p>
+    </footer>
+
+    <script>
+        const productos = [{
+            imagen: "imga/drip.webp",
+            nombre: "Conjunto Drip",
+            precio: "$35.000",
+            tallas: "S, M, L"
+        }, {
+            imagen: "imga/drip2.jpg",
+            nombre: "Polera blanca básica",
+            precio: "$15.000",
+            tallas: "S, M, L"
+        }, {
+            imagen: "imga/mk blanca.jpg",
+            nombre: "Polera Michael Kors blanca",
+            precio: "$15.000",
+            tallas: "S, M, L"
+        }, {
+            imagen: "imga/boss.jpg",
+            nombre: "Polera Boss negra",
+            precio: "$15.000",
+            tallas: "S, M, L"
+        }, {
+            imagen: "imga/mk ne.jpg",
+            nombre: "Polera Michael Kors negra",
+            precio: "$15.000",
+            tallas: "S, M, L"
+        }, {
+            imagen: "imga/mos ne.jpg",
+            nombre: "Polera Moschino negra",
+            precio: "$15.000",
+            tallas: "S, M, L"
+        }, {
+            imagen: "imga/tommy ne.jpg",
+            nombre: "Polera Tommy negra",
+            precio: "$15.000",
+            tallas: "S, M, L"
+        }, {
+            imagen: "imga/tommy.jpg",
+            nombre: "Polera Tommy blanca",
+            precio: "$15.000",
+            tallas: "S, M, L"
+        }, {
+            imagen: "imga/aen.jpg",
+            nombre: "Polera Emporio Armani negra",
+            precio: "$15.000",
+            tallas: "S, M, L"
+        }];
+
+        function renderizarProductos() {
+            const contenedor = document.getElementById('productos');
+            productos.forEach(p => {
+                const articulo = document.createElement('article');
+                articulo.classList.add('producto');
+                articulo.innerHTML = `
+                    <img src="${p.imagen}" alt="${p.nombre}">
+                    <h3>${p.nombre}</h3>
+                    <p>${p.precio}</p>
+                    <p>Tallas: ${p.tallas}</p>
+                `;
+                contenedor.appendChild(articulo);
+            });
+        }
+        window.onload = renderizarProductos;
+    </script>
+
+</body>
+
+</html>

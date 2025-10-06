@@ -1,0 +1,353 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* ====== HEADER ====== */
+header {
+    text-align: center;
+    padding: 25px 20px;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: goldenrod;
+    box-shadow: 0 2px 10px rgba(218, 165, 32, 0.3);
+}
+
+header img {
+    display: block;
+    margin: 15px auto;
+    width: 160px;
+    filter: drop-shadow(0 0 10px goldenrod);
+}
+
+header .acciones {
+    margin-top: 20px;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; /* empuja el bloque a la derecha */
+}
+
+
+/*barra bus*/
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 180px;
+}
+
+.search-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background: #ffaa00;
+}
+
+/* ====== BOTONES ====== */
+.boton {
+    text-decoration: none;
+    background: #ffcc00;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #111;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background: #ffaa00;
+}
+
+
+
+/* ====== NAV FILTROS ====== */
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    gap: 12px;
+}
+
+.filtros button {
+    padding: 10px 22px;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+}
+
+.filtros button:hover {
+    background: #ffd700;
+    transform: scale(1.12);
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.8);
+}
+
+/* ====== SLIDER DE ANUNCIOS ====== */
+.anuncio {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    border-top: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+}
+
+.anuncios {
+    display: flex;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+    gap: 25px;
+    padding: 15px 0;
+}
+
+.anuncios img {
+    height: 300px;
+    border-radius: 12px;
+    border: 2px solid goldenrod;
+    flex-shrink: 0;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.5);
+    transition: 0.3s ease;
+}
+
+.anuncios img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(218, 165, 32, 0.9);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ====== PRODUCTOS ====== */
+main h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.6);
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.producto {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 12px;
+    border: 1px solid #333;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 10px rgba(218, 165, 32, 0.2);
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    border: 1px solid goldenrod;
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.6);
+}
+
+.producto img {
+    max-width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #444;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin: 12px 0 6px;
+    color: goldenrod;
+}
+
+.producto p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #ddd;
+}
+
+.producto button {
+    margin-top: 10px;
+    background: goldenrod;
+    color: #000;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 8px rgba(218, 165, 32, 0.6);
+}
+
+.producto button:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(218, 165, 32, 0.9);
+}
+
+/* ====== CARRITO ====== */
+#carrito {
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 12px;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid goldenrod;
+    box-shadow: 0 0 20px rgba(218, 165, 32, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+#carrito h2 {
+    color: goldenrod;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(218, 165, 32, 0.7);
+}
+
+#carrito ul {
+    list-style: none;
+    padding: 0;
+}
+
+#carrito li {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    color: #f1f1f1;
+}
+
+#carrito p {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+    color: goldenrod;
+    font-size: 18px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #aaa;
+    margin-top: 40px;
+    border-top: 2px solid goldenrod;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+footer h2 {
+    color: goldenrod;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 22px;
+    }
+    .filtros button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .anuncios img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 10px;
+    }
+    .acciones a {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+    .producto img {
+        height: 180px;
+    }
+    .anuncios img {
+        height: 150px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #aaa;
+    margin-top: auto;
+
+}
+
+footer h2 {
+    color: goldenrod;
+}
+
+.continer_footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+.a_nosotros{
+    display: block;
+    margin: 10px 50px 10px 100px;
+}
+.a_conctactos{
+    display: block;
+    margin: 10px 50px 10px 100px;
+}
+.a_QA{
+    display: block;
+    margin: 10px 50px 10px 100px;
+}
+.pagos{
+    margin:10px 50px 10px 100px ;
+}
+.banco_estado{
+    width: 125px;
+    height: 65px;
+    border-radius: 12px;
+}
+
+
