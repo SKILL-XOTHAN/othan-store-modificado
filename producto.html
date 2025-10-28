@@ -132,6 +132,11 @@
         <p id="total">Total: $0</p>
     </section>
 
+    <section class= "ubicacion">
+        <h2>Estamos ubicados en el mall de iquique</h2>
+        <div id="Mapa"></div>
+    </section>
+
 
     <footer>
         <div class="continer_footer">
@@ -185,6 +190,14 @@
             document.getElementById("total").textContent = `Total: $${total.toLocaleString()}`;
         }
     </script>
+    
+    <!--Agregando mapa y tambien mi api key de google------------------------------------------------------------>
+    <script src="mapa.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqIIYtnaIf4EErdew33mTzrKlREh1AHsM&callback=initMap">
+    </script>
+    <!--+**********************************                                      -->
 </body>
 
 </html>
+
