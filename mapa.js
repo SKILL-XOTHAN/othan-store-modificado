@@ -7,5 +7,6 @@ function iniciarMap(){
   var marker = new google.maps.Marker({
     position: coordinates,
     map: map
+    title: "Othan Store",
   })
 }
