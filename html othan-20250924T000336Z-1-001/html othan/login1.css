@@ -1,0 +1,30 @@
+/* Establece la imagen de fondo para el login */
+
+.gradient-custom {
+    background-image: url('Negro\ Gris\ Oscuro\ Degradado\ Color\ y\ Estilo\ Fondo\ de\ Video.png');
+    /* Cambia la ruta a tu imagen */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* Si prefieres darle un color oscuro con overlay, usa este estilo adicional */
+
+.gradient-custom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Crea un filtro oscuro */
+    z-index: 1;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    /* Asegura que el formulario esté encima del fondo */
+}
