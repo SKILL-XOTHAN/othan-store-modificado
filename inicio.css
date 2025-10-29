@@ -225,26 +225,26 @@ main h2 {
 
 /* ======Mapa======*/
 .ubicacion {
-  text-align: center;
-  background: linear-gradient(180deg, #111, #000);
-  color: #ffcc00;
-  padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #111, #000);
+    color: #ffcc00;
+    padding: 40px 20px;
 }
 
 .ubicacion h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
-#Mapa {
-  width: 90%;
-  max-width: 900px;
-  height: 350px;
-  margin: 0 auto;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+#map {
+    width: 90%;
+    max-width: 900px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
 }
 
 
@@ -374,6 +374,7 @@ footer h2 {
     height: 65px;
     border-radius: 12px;
 }
+
 
 
 
