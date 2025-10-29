@@ -28,46 +28,51 @@
 
     <!-- NAV -->
     <nav class="filtros">
-        <button>Poleras</button>
-        <button>Chaquetas</button>
-        <button>Buzos</button>
-        <button>Conjuntos</button>
-        <button>Zapatillas</button>
+        <a href="#polera-1"><button>Poleras</button></a>
+        <a href="#chaquetas"><button>Chaquetas</button></a>
+        <a href="#buzos"><button>Buzos</button></a>
+        <a href="#conjunto"><button>Conjuntos</button></a>
+        <a href="#zapatilla"><button>Zapatillas</button></a>
     </nav>
 
     <!-- ANUNCIOS -->
     <section class="anuncio">
         <div class="anuncios">
-            <img src="imga/drip2.jpg" alt="drip">
+            <!--<img src="imga/drip2.jpg" alt="drip">-->
             <img src="imga/boss.jpg" alt="drip">
-            <img src="imga/mos ne.jpg" alt="drip">
             <img src="imga/mk blanca.jpg" alt="drip">
             <img src="imga/tommy ne.jpg" alt="drip">
+            <img src="imga/mk ne.jpg" alt="polera">
+            <img src="imga/tomy blanca.jpg" alt="polera">
+            <img src="imga/mos ne.jpg" alt="polera">
+            <img src="imga/aen.jpg" alt="polera">
+
         </div>
     </section>
 
-    <main>
 
+    <main>
+        <p id="polera-1"> POLERA </p>
         <section class="productos">
 
-            <article class="producto">
+            <!--<article class="producto">
                 <img src="imga/drip.webp" alt="Conjunto Drip">
                 <h3>Conjunto Drip</h3>
                 <p>$35.000</p>
                 <p>Tallas disponibles: S, M, L</p>
                 <button onclick="agregarCarrito('Conjunto Drip', 35000)">Agregar al carrito</button>
-            </article>
+            </article>-->
 
-            <article class="producto">
-                <img src="imga/drip2.jpg" alt="Polera blanca básica">
+            <!--<article class="producto">
+                <img src="imga/basicbla.jpg" alt="Polera blanca básica">
                 <h3>Polera blanca básica</h3>
                 <p>$15.000</p>
                 <p>Tallas disponibles: S, M, L</p>
                 <button onclick="agregarCarrito('Polera blanca básica', 15000)">Agregar al carrito</button>
-            </article>
+            </article>-->
 
             <article class="producto">
-                <img src="imga/mk blanca.jpg" alt="Polera Michael Kors blanca">
+                <a href="poleras/mkblanca.html"><img src="imga/mk blanca.jpg" alt="Polera Michael Kors blanca"></a>
                 <h3>Polera Michael Kors blanca</h3>
                 <p>$15.000</p>
                 <p>Tallas disponibles: S, M, L</p>
@@ -75,7 +80,9 @@
             </article>
 
             <article class="producto">
+                <a href="poleras/bossnegra.html">
                 <img src="imga/boss.jpg" alt="Polera Boss negra">
+                </a>
                 <h3>Polera Boss negra</h3>
                 <p>$15.000</p>
                 <p>Tallas disponibles: S, M, L</p>
@@ -107,7 +114,7 @@
             </article>
 
             <article class="producto">
-                <img src="imga/tommy.jpg" alt="Polera Tommy blanca">
+                <a href="poleras/tomybl.html"><img src="imga/tomy blanca.jpg" alt="Polera Tommy blanca"></a>
                 <h3>Polera Tommy blanca</h3>
                 <p>$15.000</p>
                 <p>Tallas disponibles: S, M, L</p>
@@ -115,13 +122,111 @@
             </article>
 
             <article class="producto">
-                <img src="imga/aen.jpg" alt="Polera Emporio Armani negra">
+                <img src="imga/aen.jpg"  alt="Polera Emporio Armani negra" >
                 <h3>Polera Emporio Armani negra</h3>
                 <p>$15.000</p>
                 <p>Tallas disponibles: S, M, L</p>
                 <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
             </article>
 
+        </section>
+    </main>
+    <!--  chaquetas   -->
+    <main>
+    <p id="chaquetas">Polerones</p>
+    <section class="productos">
+        <article class="poleron">
+            <img src="imga/polerontiger.jpg" alt="Polerón 1">
+            <h3>Polera Emporio Armani negra</h3>
+            <p>$15.000</p>
+            <p>Tallas disponibles: S, M, L</p>
+            <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+        </article>
+        <article class="poleron">
+            <img src="imga/poleronazul.jpg" alt="Polerón 2">
+            <h3>Polera Emporio Armani negra</h3>
+            <p>$15.000</p>
+            <p>Tallas disponibles: S, M, L</p>
+            <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+        </article>
+        <article class="poleron">
+            <img src="imga/poleronnegro.jpg" alt="Polerón 3">
+            <h3>Polera Emporio Armani negra</h3>
+            <p>$15.000</p>
+            <p>Tallas disponibles: S, M, L</p>
+            <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+        </article>
+        <article class="poleron">
+            <img src="imga/poleron kappa.jpg" alt="Polerón 4">
+            <h3>Polera Emporio Armani negra</h3>
+            <p>$15.000</p>
+            <p>Tallas disponibles: S, M, L</p>
+            <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+        </article>
+    </section>
+</main>
+
+
+    <!--        BUZOS      -->
+    <P id="buzos"> BUZOS </P>
+    <main>
+        <section class="productos">
+            <article class="producto">
+                <img src="imga/buzo.jpg" alt="buzo">
+            <h3>BUZO NIKE NEGRO</h3>
+                <p>$20.000</p>
+                <p>Tallas disponibles: S, M, L</p>
+                <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="imga/buzo.jpg" alt="buzo">
+            <h3>BUZO NIKE NEGRO</h3>
+                <p>$20.000</p>
+                <p>Tallas disponibles: S, M, L</p>
+                <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="imga/buzo2.jpg" alt="buzo">
+            <h3>BUZO NIKE NEGRO</h3>
+                <p>$20.000</p>
+                <p>Tallas disponibles: S, M, L</p>
+                <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+            </article>
+            <article class="producto">
+                <img src="imga/buzo.jpg" alt="buzo">
+            <h3>BUZO NIKE NEGRO</h3>
+                <p>$20.000</p>
+                <p>Tallas disponibles: S, M, L</p>
+                <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+            </article>
+
+
+        </section>
+    </main>
+
+    <P id="conjunto"> CONJUNTO </P>
+    <main>
+        <section class="productos">
+            <article class="producto">
+                <img src="imga/drip.webp" alt="chaqueta">
+            <h3>Polera Emporio Armani negra</h3>
+                <p>$15.000</p>
+                <p>Tallas disponibles: S, M, L</p>
+                <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
+            </article>
+        </section>
+    </main>
+
+    <main>
+        <p id="zapatilla"> ZAPATILLA </p>
+        <section class="productos">
+            <article class="zapatilla">
+                <img src="imga/jordan1low.jpg" alt="tillas">
+            <h3> Jordan 1 low </h3>
+                <p>$65.000</p>
+                <p>Tallas disponibles: 40,41,42,41,43,44</p>
+                <button onclick="agregarCarrito('zapatilla jordan 1', 65000)">Agregar al carrito</button>
+            </article>
         </section>
     </main>
 
