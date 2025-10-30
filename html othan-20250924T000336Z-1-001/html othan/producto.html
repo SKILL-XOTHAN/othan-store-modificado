@@ -11,19 +11,35 @@
 <body>
     <!-- HEADER -->
     <header>
-        <h1>Bienvenido a Othan Store</h1>
-        <p>Aquí podrás encontrar todo tipo de ropa</p>
-        <img src="imga/M.png" alt="Logo de Othan Store">
-        <div class="acciones">
-            <div class="search-bar">
-            <input type="text" placeholder="Buscar productos...">
-            <button class="search-btn"> 🔍</button>
-            </div>
-            <a href="login.html" class="boton">Registrarte</a>
-            <a href="login1.html" class="boton">Iniciar sesión</a>
-
+    <div class="header_container">
+        
+        <!-- Logo -->
+        <div class="logo">
+            <a href="producto.html">
+                <img src="imga/logo.png" alt="Logo de Othan Store">
+            </a>
         </div>
-    </header>
+
+        <!-- Barra de búsqueda -->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button class="search-btn">
+                🔍
+            </button>
+        </div>
+
+        <!-- Menú -->
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="producto.html">Inicio</a></li>
+                    <li><a href="login.html" class="boton">Registrarte</a></li>
+                    <li><a href="login1.html" class="boton">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 
 
     <!-- NAV -->
@@ -238,6 +254,12 @@
         <ul id="lista-carrito"></ul>
         <p id="total">Total: $0</p>
     </section>
+    
+    <!--Section del mapa  --------------------------------------------->
+    <section class= "ubicacion">
+        <h2>Estamos ubicados en el mall de iquique</h2>
+        <div id="map"></div>
+    </section>
 
         <!--Section del mapa  --------------------------------------------->
     <section class= "ubicacion">
@@ -247,34 +269,37 @@
 
 
 
-    <footer>
+   <footer>
         <div class="continer_footer">
             <div class="sobre_nosotros">
-                <a class="a_nosotros">Nosotros</a>
+                <h2 class="a_nosotros" id="nosotros">Nosotros</h2>
                 <a class="a_nosotros" href="Nosotros.html#quienes_somos">Quienes somos</a>
                 <a class="a_nosotros" href="Nosotros.html#mision">Nuestra mision</a>
                 <a class="a_nosotros" href="Nosotros.html#vision">Nuestra vision</a>
-                <a href="tyc.html">TERMINOS Y CONDICIONES</a>
             </div>
+
             <div class="conctactos">
-                <a class="a_conctactos">Contactos</a>
+                <h2 class="a_conctactos">Contactos</h2>
                 <a class="a_conctactos" href="">Instragram</a>
                 <a class="a_conctactos" href="">Correo</a>
             </div>
+
             <div class="QA">
+                <h2 class="a_QA">Otros</h2>
                 <a class="a_QA" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                <a href="pedidos.html"> Revisa el estadp de tu pedido </a>
+                <a class="a_QA" href="pedidos.html"> Revisa el estadp de tu pedido </a>
+                <a class="a_QA" href="tyc.html">Terminos y condiciones</a>
             </div>
-            <div class="pagos">
-                <a >Metodos de Pagos</a>
-                <div class="pagos_imagenes">
-                    <img class="banco_estado" src="imga/bancoestado.jpg" alt="Banco estado">
-                </div>
+
+            <div class="Pagos">
+                <h2 class="pagos">Metodos de Pagos</h2>
+                <img class="banco_estado" src="imga/bancoestado.jpg" alt="Banco estado">
             </div>
         </div>
         <p>Hecho por Othan - Todos los derechos reservados</p>
 
     </footer>
+
 
     <!-- SCRIPT DEL CARRITO -->
 
@@ -301,7 +326,6 @@
     </script>
 
 
-
      <!--Agregando mapa y tambien mi api key de google------------------------------------------------------------>
     <script src="mapa.js"></script>
     <script async
@@ -310,6 +334,4 @@
     
 </body>
 </html>
-
-
 

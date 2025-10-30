@@ -164,12 +164,22 @@ footer {
     padding: 20px;
     background: #000;
     color: #aaa;
-    margin-top: auto;
-    
+    margin-top: 40px;
+    border-top: 2px solid goldenrod;
+}
+footer p {
+    margin: 25px;
+    font-size: 14px;
+    color: #ddd;
 }
 
 footer h2 {
+    font-size: 25px;
     color: goldenrod;
+}
+footer a{
+    color: #f1f1f1;
+    text-decoration: none;
 }
 
 .continer_footer{
@@ -193,6 +203,8 @@ footer h2 {
     margin:10px 50px 10px 100px ;
 }
 .banco_estado{
-    width: 50px;
-    height: 30px;
+    width: 125px;
+    height: 65px;
+    border-radius: 12px;
 }
+
