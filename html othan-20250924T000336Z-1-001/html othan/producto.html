@@ -202,7 +202,7 @@
                 <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000)">Agregar al carrito</button>
             </article>
             <article class="producto">
-                <img src="imga/buzo2.jpg" alt="buzo">
+                <img src="imga/buzo.jpg" alt="buzo">
             <h3>BUZO NIKE NEGRO</h3>
                 <p>$20.000</p>
                 <p>Tallas disponibles: S, M, L</p>
@@ -246,6 +246,8 @@
         </section>
     </main>
 
+    
+
     <!-- CARRITO -->
     <section id="carrito">
         <h2>Carrito de Compras</h2>
@@ -258,6 +260,13 @@
         <h2>Estamos ubicados en el mall de iquique</h2>
         <div id="map"></div>
     </section>
+
+        <!--Section del mapa  --------------------------------------------->
+    <section class= "ubicacion">
+        <h2>Estamos ubicados en el mall de iquique</h2>
+        <div id="map"></div>
+    </section>
+
 
 
    <footer>
@@ -315,16 +324,14 @@
             document.getElementById("total").textContent = `Total: $${total.toLocaleString()}`;
         }
     </script>
-        <!--Agregando mapa y tambien mi api key de google------------------------------------------------------------>
+
+
+     <!--Agregando mapa y tambien mi api key de google------------------------------------------------------------>
     <script src="mapa.js"></script>
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap">
     </script>
-    <!--+**********************************  -->
+    
 </body>
-
 </html>
-
-
-
 
