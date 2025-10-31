@@ -95,31 +95,35 @@ header {
 
 
 /* ====== NAV FILTROS ====== */
+/* ====== NAV FILTROS ABAJO ====== */
 .filtros {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 55px;
-    margin: 25px 0;
-    gap: 10px;
+display: flex;
+justify-content: center;
+gap: 15px;
+width: 100%;
+padding: 10px 0;
+background: #ffffff; /* mismo color blanco */
+border-top: 2px solid goldenrod;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;  /* la hace sticky */
+  top: 80px;         /* justo debajo del header */
+  z-index: 999;      /* encima de otros elementos */
 }
 
 .filtros button {
-    padding: 10px 20px;
-    background-color: goldenrod;
-    color: black;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    box-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+background: goldenrod;
+border: none;
+color: white;
+font-weight: 600;
+padding: 8px 16px;
+border-radius: 20px;
+cursor: pointer;
+transition: all 0.3s ease;
 }
 
 .filtros button:hover {
-    background: #ffd700;
-    transform: scale(1.12);
-    box-shadow: 0 0 15px rgba(218, 165, 32, 0.8);
+background: #eac600;
+transform: translateY(-2px);
 }
 
 /* ====== SLIDER DE ANUNCIOS ====== */
@@ -708,4 +712,5 @@ footer a{
     font-weight: bold;
     margin-left: 5px;
 }
+
 
