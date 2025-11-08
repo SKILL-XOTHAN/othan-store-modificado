@@ -337,6 +337,27 @@
     font-weight: bold;
 }
 
+.info-empresa {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 10px;
+    border: 1px solid rgba(218, 165, 32, 0.2);
+    text-align: left;
+}
+
+.info-empresa p {
+    color: #ddd;
+    font-size: 13px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.info-empresa p strong {
+    color: goldenrod;
+    font-weight: 600;
+}
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 1024px) {
     .carrito-contenido {
