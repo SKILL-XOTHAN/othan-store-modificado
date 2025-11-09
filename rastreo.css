@@ -1,13 +1,19 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
-
 body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(imga/Negro\ Gris\ Oscuro\ Degradado\ Color\ y\ Estilo\ Fondo\ de\ Video.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, main content (grows), footer */
+  min-height: 100vh;
+}
+
+main {
+  margin: 0;
+  margin-top: 150px;
+  margin-bottom: 30px;
 }
 
 .position-relative {
@@ -36,9 +42,27 @@ body {
 }
 
 .p1 {
-  top: 30px;
+  top: 25px;
   left: 0px;
   width: 100%;
   height: 10px;
   z-index: 1;
+}
+
+.fa-check {
+  font-size: 25px; /* Set your desired size */
+}
+
+.rounded-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 7px double white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-sm {
+  padding: 50px 100px;
 }
