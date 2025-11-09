@@ -4,18 +4,28 @@ body {
   padding: 0;
   line-height: 1.6;
 }
-
+/* ====== HEADER ====== */
 header {
-            text-align: center;
-            padding: 30px 20px;
-            background: linear-gradient(135deg, #000000, #1c1c1c);
-            color: goldenrod;
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #1c1c1c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    z-index: 1000;
+}
 
-        header img {
-            max-width: 100px;
-            margin: 10px 0;
-        }
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
 .barra-superior {
   display: flex;
   justify-content: center; /* centra horizontalmente */
@@ -31,7 +41,7 @@ header a{
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 100px 20px;
 }
 
 /* Menú lateral */
@@ -69,10 +79,6 @@ header a{
   font-weight: 500;
 }
 
-.sidebar ul li a:hover {
-  color: #005bb5;
-}
-
 /* Contenido */
 .terms-content h1 {
   text-align: center;
@@ -82,7 +88,7 @@ header a{
 .terms-content h2 {
   font-size: 1.3rem;
   scroll-margin-top: 80px;
-  margin-left: -20px;
+  margin-left: -5px;
 }
 
 
@@ -96,3 +102,5 @@ header a{
         footer h2 {
             color: goldenrod;
         }
+
+
