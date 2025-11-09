@@ -1,11 +1,48 @@
 const barraProgreso = document.getElementById("barraProgreso");
 const botonProgreso = document.getElementById("botonProgreso");
+const orderID = document.getElementById("orderID");
+const trackingID = document.getElementById("trackingID");
 const b1 = document.querySelector("#b1 .btn");
 const b2 = document.querySelector("#b2 .btn");
 const b3 = document.querySelector("#b3 .btn");
 const b4 = document.querySelector("#b4 .btn");
 
+let pedidoID = "3333-CCCC";
+let rastreoID;
 let progreso = 0;
+
+// --- Cambia esta URL cuando subas tu servidor a internet ---
+const BASE_URL = "http://localhost:3000";
+
+// --- Funciones ---
+async function cargarPedido() {
+  try {
+    const respuesta = await fetch(`${BASE_URL}/cargarPedido/${pedidoID}`);
+    if (!respuesta.ok) throw new Error("No se encontró el pedido");
+    return await respuesta.json();
+  } catch (error) {
+    console.warn("No se pudo cargar el pedido:", error);
+    return null;
+  }
+}
+
+async function guardarPedido() {
+  try {
+    const respuesta = await fetch(`${BASE_URL}/guardarPedido`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        pedidoID,
+        rastreoID,
+        estado: progreso,
+      }),
+    });
+    const data = await respuesta.json();
+    console.log(data.mensaje);
+  } catch (error) {
+    console.error("Error al guardar:", error);
+  }
+}
 
 function updateButtonClasses() {
   const botones = [b1, b2, b3, b4];
@@ -20,26 +57,38 @@ function updateButtonClasses() {
 }
 
 function updateProgressBar() {
-  botonProgreso.disabled = true; // desactiva durante la animación
+  botonProgreso.disabled = true;
 
-  // Avanza o reinicia el progreso
   if (progreso >= 100) {
     progreso = 0;
   } else {
     progreso = Math.min(progreso + 100 / 6, 100);
   }
 
-  // Actualiza la barra
   barraProgreso.style.width = `${progreso}%`;
   updateButtonClasses();
-
-  // Cambia el texto del botón según el estado
   botonProgreso.textContent = progreso >= 100 ? "Reiniciar" : "Avanzar";
+
+  guardarPedido(); // guardar en el servidor
 }
 
-// Reactiva el botón cuando termina la animación de Bootstrap
 barraProgreso.addEventListener("transitionend", () => {
   botonProgreso.disabled = false;
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const pedido = await cargarPedido();
+  if (pedido && pedido.rastreoID && pedido.estado !== undefined) {
+    pedidoID = pedido.pedidoID;
+    progreso = pedido.estado;
+    rastreoID = pedido.rastreoID;
+
+    barraProgreso.style.width = `${progreso}%`;
+    updateButtonClasses();
+    orderID.textContent = pedidoID;
+    trackingID.textContent = rastreoID;
+    botonProgreso.textContent = progreso >= 100 ? "Reiniciar" : "Avanzar";
+  }
 });
 
 botonProgreso.addEventListener("click", updateProgressBar);
