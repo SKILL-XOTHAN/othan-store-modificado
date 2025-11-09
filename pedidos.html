@@ -9,39 +9,56 @@
 
   <header>
     <img src="imga/M.png" alt="Logo de Othan Store" class="logo" />
-      <div class="header-content">
-        <h1>Bienvenido a Othan Store</h1>
-        <p>Aquí podrás encontrar todo tipo de ropa</p>
-        <div class="acciones">
-          <a href="login.html" class="boton">Registrarte</a>
-          <a href="login1.html" class="boton">Iniciar sesión</a>
-        </div>
+    <div class="header-content">
+      <h1>Bienvenido a Othan Store</h1>
+      <p>Aquí podrás encontrar todo tipo de ropa</p>
+      <div class="acciones">
+        <a href="login.html" class="boton">Registrarte</a>
+        <a href="login1.html" class="boton">Iniciar sesión</a>
       </div>
     </div>
   </header>
 
   <body>
     <main>
-      <div class="cuadro">
+      <div class="container">
         <h1>Rastrea el Estado de tu Pedido:</h1>
-        <div class="d-flex justify-content-center align-items-stretch gap-3">
-          <div class="form-floating flex-grow-1">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInput"
-              placeholder="text"
-            />
-            <label for="floatingInput">Número de Pedido</label>
-          </div>
-          <button type="button" class="btn btn-outline-light btn-lg">Rastrear</button>
+        <div class="container col-7">
+          <form class="needs-validation" novalidate>
+            <div class="row g-0">
+              <div class="col">
+                <input
+                  type="text"
+                  id="numPedido"
+                  class="form-control rounded-0 rounded-start"
+                  placeholder="1111-AAAA"
+                  required
+                  pattern="\d{4}-[A-Za-z]{4}"
+                />
+                <div class="invalid-feedback text-center">
+                  Formato incorrecto. Debe ser: <em>1111-AAAA</em>
+                </div>
+                <div class="valid-feedback text-center">
+                  Numero de pedido válido.
+                </div>
+              </div>
+              <div class="col-auto">
+                <button
+                  type="submit"
+                  class="btn btn-outline-light rounded-0 rounded-end"
+                >
+                  RASTREAR
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </main>
 
     <footer>
       <p>Hecho por Othan</p>
-      <h2>wenas tardes</h2>
     </footer>
+    <script src="pedidos.js"></script>
   </body>
 </html>

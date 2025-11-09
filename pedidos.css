@@ -4,15 +4,17 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
+  background-image: url(imga/Negro\ Gris\ Oscuro\ Degradado\ Color\ y\ Estilo\ Fondo\ de\ Video.png);
+  background-size: 100%;
   color: #f8f9fa;
   line-height: 1.6;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, main content (grows), footer */
+  min-height: 100vh;
 }
 
 .form-floating {
   color: rgb(66, 56, 0);
-  font-size:medium;
-  max-width: 50%;
 }
 
 /* ====== HEADER ====== */
@@ -75,28 +77,24 @@ main h1 {
   padding: 50px;
 }
 
-.cuadro {
+.container {
   width: fit-content;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
   background-color: #000;
-  border-radius: 5px;
-  border: 1px solid #333;
-  padding: 150px;
-  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #333;
+  padding: 80px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
-
-
-/* ====== FOOTER ====== */
 
 footer {
   text-align: center;
   padding: 20px;
-  background: #000;
+  background: linear-gradient(135deg, #000000, #1c1c1c);
   color: #aaa;
-  margin-top: 20px;
 }
 
 footer h2 {
@@ -104,7 +102,6 @@ footer h2 {
 }
 
 /* ====== RESPONSIVE ====== */
-
 @media (max-width: 768px) {
   header h1 {
     font-size: 22px;
@@ -114,7 +111,7 @@ footer h2 {
     padding: 8px 15px;
   }
   .anuncios img {
-    height: 150px;
+    height: 200px;
   }
 }
 
@@ -128,5 +125,8 @@ footer h2 {
   }
   .producto img {
     height: 180px;
+  }
+  .anuncios img {
+    height: 150px;
   }
 }
