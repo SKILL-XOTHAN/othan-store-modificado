@@ -4,153 +4,170 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seguimiento de Pedido</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Archivo CSS personalizado -->
+
     <link rel="stylesheet" href="rastreo.css" />
   </head>
-
+  <div id="header"></div>
   <!-- Fondo verde general -->
-  <body class="bg-success text-dark">
-    <!-- Contenedor principal con estilos de Bootstrap -->
-    <div
-      class="container-sm d-flex flex-column bg-light shadow-lg rounded-4 p-5 gap-2"
-    >
-      <!-- Título principal -->
-      <p class="h1 text-success text-center mb-5">Seguimiento de Pedido</p>
+  <body class="text-dark">
+    <main>
+      <!-- Contenedor principal con estilos de Bootstrap -->
+      <div
+        class="container-sm d-flex flex-column bg-light shadow rounded-3 gap-4"
+      >
+        <!-- Título principal -->
+        <p class="h1 fw-bold fw text-center mb-5">Seguimiento de Pedido</p>
 
-      <!-- Sección de encabezado con información de pedido -->
-      <div class="d-flex justify-content-between align-items-center gap-5">
-        <!-- Columna izquierda: ID del pedido -->
-        <p class="h5 text-dark">
-          <i class="text-primary fa-solid fa-cart-shopping fa-lg"></i>
-          Order ID :
-          <span class="text-success fw-bold">
-            <i class="text-secondary fa-solid fa-hashtag"></i>
-            <i id="orderID">0000-0000</i>
-          </span>
-        </p>
-
-        <!-- Columna derecha: Fecha estimada y tracking ID -->
-        <div class="d-flex flex-column text-end h5 align-items-end">
-          <p class="fw-bolder font-monospace">
-            <span class="text-center">Expected Arrival</span>
-            <span
-              class="badge rounded-pill bg-primary border border-secondary text-light fw-bold shadow"
-            >
-              20/12/2025
+        <!-- Sección de encabezado con información de pedido -->
+        <div
+          class="d-flex justify-content-between align-items-center gap-5 pb-5"
+        >
+          <!-- Columna izquierda: ID del pedido -->
+          <p class="h5 text-black">
+            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+            ID de Pedido :
+            <span class="text-success fw-bold">
+              <i class="text-secondary fa-solid fa-hashtag"></i>
+              <i id="orderID">0000-0000</i>
             </span>
           </p>
-          <p class="fw-bold font-monospace">
-            <span class="align-middle">Tracking ID</span>
-            <span
-              class="badge rounded-pill bg-danger border border-secondary text-light fw-bold shadow"
-            >
-              <i id="trackingID">23458039</i>
-            </span>
-          </p>
+
+          <!-- Columna derecha: Fecha estimada y tracking ID -->
+          <div class="d-flex flex-column h5 align-items-end">
+            <p class="h5 text-black">
+              Llegada Estimada
+              <span class="badge rounded-pill text-bg-dark shadow-lg">
+                20/12/2025
+              </span>
+            </p>
+            <p class="h5 text-black">
+              ID de Rastreo
+              <span class="badge rounded-pill text-bg-dark shadow-lg">
+                <i id="trackingID">23458039</i>
+              </span>
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Contenedor del progreso visual -->
-      <div class="position-relative text-center">
-        <!-- Barra de progreso de Bootstrap -->
-        <div class="progress p1 position-absolute">
-          <div
-            id="barraProgreso"
-            class="progress-bar progress-bar-striped bg-success progress-bar-animated"
-            role="progressbar"
-            style="width: 0%"
-          >
-            <!-- valor
+        <!-- Contenedor del progreso visual -->
+        <div class="position-relative text-center">
+          <!-- Barra de progreso de Bootstrap -->
+          <div class="progress p1 position-absolute">
+            <div
+              id="barraProgreso"
+              class="progress-bar progress-bar-striped bg-dark progress-bar-animated"
+              role="progressbar"
+              style="width: 0%"
+            >
+              <!-- valor
             inicial, 
             luego
             se
             actualiza
             desde
             script.js
-            -->
+            --></div>
+          </div>
+
+          <!-- Cada bloque "bX" representa un paso del pedido -->
+          <!-- b1: Pedido confirmado -->
+          <div
+            id="b1"
+            class="check d-flex flex-column gap-2 align-items-center position-absolute translate-middle-x"
+          >
+            <!-- Botón circular del paso -->
+            <button
+              class="btn bg-secondary btn-lg text-white rounded-circle"
+              data-bs-toggle="tooltip"
+              title="Order Confirmed"
+            >
+              <i class="fa-solid fa-check fa-2xl"></i>
+            </button>
+            <!-- Icono e indicador textual -->
+            <i class="text-black fa-solid fa-clipboard-check fa-3x"></i>
+            <p class="text-dark fw-bold">Orden<br />Confirmada</p>
+          </div>
+
+          <!-- b2: Pedido enviado -->
+          <div
+            id="b2"
+            class="check d-flex flex-column gap-2 align-items-center position-absolute translate-middle-x"
+          >
+            <button
+              class="btn bg-secondary btn-lg text-white rounded-circle"
+              data-bs-toggle="tooltip"
+              title="Order Shipped"
+            >
+              <i class="fa-solid fa-check fa-2xl"></i>
+            </button>
+            <i class="text-black fa-solid fa-boxes-packing fa-3x"></i>
+            <p class="text-dark fw-bold">Listo para<br />Despacho</p>
+          </div>
+
+          <!-- b3: En camino -->
+          <div
+            id="b3"
+            class="check d-flex flex-column gap-2 align-items-center position-absolute translate-middle-x"
+          >
+            <button
+              class="btn bg-secondary btn-lg text-white rounded-circle"
+              data-bs-toggle="tooltip"
+              title="Out for Delivery"
+            >
+              <i class="fa-solid fa-check fa-2xl"></i>
+            </button>
+            <i class="text-black fa-solid fa-truck-arrow-right fa-3x"></i>
+            <p class="text-dark fw-bold">Envío en<br />Tránsito</p>
+          </div>
+
+          <!-- b4: Entregado -->
+          <div
+            id="b4"
+            class="check d-flex flex-column gap-2 align-items-center position-absolute translate-middle-x"
+          >
+            <button
+              class="btn btn-lg bg-secondary text-white rounded-circle"
+              data-bs-toggle="tooltip"
+              title="Order Delivered"
+            >
+              <i class="fa-solid fa-check fa-2xl"></i>
+            </button>
+            <i class="text-black fa-solid fa-house-chimney fa-3x"></i>
+            <p class="text-dark fw-bold">Pedido<br />Entregado</p>
           </div>
         </div>
 
-        <!-- Cada bloque "bX" representa un paso del pedido -->
-        <!-- b1: Pedido confirmado -->
-        <div
-          id="b1"
-          class="check d-flex flex-column gap-2 align-items-center position-absolute translate-middle-x"
-        >
-          <!-- Botón circular del paso -->
+        <!-- Botón principal para avanzar o reiniciar el progreso -->
+        <div class="justify-content-center mx-auto">
           <button
-            class="btn bg-secondary btn-lg text-white rounded-circle"
-            style="width: 60px; height: 60px"
-            data-bs-toggle="tooltip"
-            title="Order Confirmed"
+            id="botonProgreso"
+            class="btn btn-lg bg-black text-light shadow-lg"
           >
-            <i class="fa-solid fa-check fa-lg"></i>
+            Avanzar
           </button>
-          <!-- Icono e indicador textual -->
-          <i class="text-primary fa-solid fa-clipboard-check fa-3x"></i>
-          <p class="text-dark fw-bold">Order<br />Confirmed</p>
-        </div>
-
-        <!-- b2: Pedido enviado -->
-        <div
-          id="b2"
-          class="check d-flex flex-column gap-2 align-items-center position-absolute translate-middle-x"
-        >
-          <button
-            class="btn bg-secondary btn-lg text-white rounded-circle"
-            style="width: 60px; height: 60px"
-            data-bs-toggle="tooltip"
-            title="Order Shipped"
-          >
-            <i class="fa-solid fa-check fa-lg"></i>
-          </button>
-          <i class="text-warning fa-solid fa-boxes-packing fa-3x"></i>
-          <p class="text-dark fw-bold">Order<br />Shipped</p>
-        </div>
-
-        <!-- b3: En camino -->
-        <div
-          id="b3"
-          class="check d-flex flex-column gap-2 align-items-center position-absolute translate-middle-x"
-        >
-          <button
-            class="btn bg-secondary btn-lg text-white rounded-circle"
-            style="width: 60px; height: 60px"
-            data-bs-toggle="tooltip"
-            title="Out for Delivery"
-          >
-            <i class="fa-solid fa-check fa-lg"></i>
-          </button>
-          <i class="text-info fa-solid fa-truck-arrow-right fa-3x"></i>
-          <p class="text-dark fw-bold">Out for<br />Delivery</p>
-        </div>
-
-        <!-- b4: Entregado -->
-        <div
-          id="b4"
-          class="check d-flex flex-column gap-2 align-items-center position-absolute translate-middle-x"
-        >
-          <button
-            class="btn btn-lg bg-secondary text-white rounded-circle"
-            style="width: 60px; height: 60px"
-            data-bs-toggle="tooltip"
-            title="Order Delivered"
-          >
-            <i class="fa-solid fa-check fa-lg"></i>
-          </button>
-          <i class="text-success fa-solid fa-house-chimney fa-3x"></i>
-          <p class="text-dark fw-bold">Order<br />Delivered</p>
         </div>
       </div>
+    </main>
+    <div id="footer"></div>
+    <script>
+      ["header", "footer"].forEach((id) =>
+        fetch(`${id}.html`)
+          .then((r) => r.text())
+          .then((html) => (document.getElementById(id).innerHTML = html))
+      );
+    </script>
 
-      <!-- Botón principal para avanzar o reiniciar el progreso -->
-      <div class="justify-content-center mx-auto">
-        <button id="botonProgreso" class="btn btn-lg bg-primary text-white">
-          Avanzar
-        </button>
-      </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Inicializa tooltips de Bootstrap al cargar -->
     <script>
@@ -161,13 +178,6 @@
         [...tooltipTriggerList].map((el) => new bootstrap.Tooltip(el));
       });
     </script>
-
-    <!-- Librería Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- Archivo JS principal (control de progreso y comunicación con Node) -->
     <script src="rastreo.js"></script>

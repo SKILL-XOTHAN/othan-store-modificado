@@ -2,7 +2,7 @@
   "1111-AAAA": {
     "pedidoID": "1111-AAAA",
     "rastreoID": 11111111,
-    "estado": 100
+    "estado": 16.666666666666668
   },
   "2222-BBBB": {
     "pedidoID": "2222-BBBB",
@@ -22,6 +22,6 @@
   "5555-EEEE": {
     "pedidoID": "5555-EEEE",
     "rastreoID": 55555555,
-    "estado": 83.33
+    "estado": 16.666666666666668
   }
 }

@@ -2,23 +2,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const formularios = document.querySelectorAll(".needs-validation");
 
   formularios.forEach((formaPedido) => {
+    const input = formaPedido.querySelector("#numPedido");
+
     formaPedido.addEventListener("submit", (event) => {
       event.preventDefault();
-
-      // Marca el formulario como validado (Bootstrap aplicará estilos)
       formaPedido.classList.add("was-validated");
 
-      if (!formaPedido.checkValidity()) {
-        // Si hay errores, no continuar
-        return;
-      }
+      if (!formaPedido.checkValidity()) return;
 
-      // Si pasa la validación
-      alert(`Pedido ingresado con éxito! Número: ${formaPedido.numPedido.value}`);
+      const numPedido = input.value.trim();
 
-      // Reinicia el formulario visualmente
-      formaPedido.reset();
-      formaPedido.classList.remove("was-validated");
+      // Redirige a otra página con el número del pedido como parámetro
+      window.location.href = `rastreo.html?pedido=${encodeURIComponent(
+        numPedido
+      )}`;
     });
   });
 });
