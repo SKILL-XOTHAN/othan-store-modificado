@@ -11,8 +11,8 @@ const productos = {
 
     buzo1: {
         nombre: "Buzo nike negro",
-        precio: 20000,
-        img: "../../imga/buzo.jpg",
+        precio: 15000,
+        img: "../../imga/BUZO2.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -20,8 +20,8 @@ const productos = {
     },
     buzo2: {
         nombre: "Buzo nike negro",
-        precio: 20000,
-        img: "../../imga/buzo.jpg",
+        precio: 15000,
+        img: "../../imga/BUZO2.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -29,8 +29,8 @@ const productos = {
     },
     buzo3: {
         nombre: "Buzo nike negro",
-        precio: 20000,
-        img: "../../imga/buzo.jpg",
+        precio: 15000,
+        img: "../../imga/BUZO2.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -38,8 +38,8 @@ const productos = {
     },
     buzo4: {
         nombre: "Buzo nike negro",
-        precio: 20000,
-        img: "../../imga/buzo.jpg",
+        precio: 15000,
+        img: "../../imga/BUZO2.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
