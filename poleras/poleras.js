@@ -9,7 +9,7 @@ const productos = {
     drip: {
         nombre: "Conjunto Drip",
         precio: 35000,
-        img: "/othan-store-modificado/imga/drip2.jpg",
+        img: "/othan-store-modificado/imga/drip.webp",
         descripcion: `Conjunto drip confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -191,6 +191,7 @@ if (producto) {
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
 }
+
 
 
 
