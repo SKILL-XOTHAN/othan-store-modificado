@@ -15,7 +15,6 @@ body {
 
 
 /* ====== HEADER ====== */
-/* ====== HEADER ====== */
 header {
     position: fixed;
     top: 0;
@@ -138,8 +137,9 @@ main{
     flex-direction: column;
     justify-content: flex-start; /* el contenido arriba */
 }
-h2{
+main h2{
     font-size: 29px;
+    scroll-margin-top: 100px;
 }
 p {
     text-align: none;
@@ -158,10 +158,32 @@ p {
 }
 
 
+/* ======Mapa======*/
+.ubicacion {
+    text-align: center;
+    color: #ffcc00;
+    padding: 40px 20px;
+    
+}
 
+.ubicacion h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#map {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+}
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     background: #000;
     color: #aaa;
     margin-top: 40px;
