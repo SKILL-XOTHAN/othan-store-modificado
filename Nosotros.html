@@ -12,8 +12,7 @@
         
         <!-- Logo -->
         <div class="logo">
-            <a href="producto.html">
-                <img src="imga/logo.png" alt="Logo de Othan Store">
+                <img src="imga/M.png" alt="Logo de Othan Store">
             </a>
         </div>
 
@@ -47,7 +46,14 @@
 
         <h2 id="vision">Nuestra Vision</h2>
         <p>Convertirnos en una de las principales tiendas online de moda en Latinoamérica, reconocida por la innovación, la confianza de nuestros clientes y el compromiso con la autenticidad en cada producto.</p>
+            <!--Section del mapa  --------------------------------------------->
+        <section class="ubicacion">
+        <h2 id="ubicacion">Estamos ubicados en el mall de iquique</h2>
+        <div id="map"></div>
+        </section>
     </main>
+
+
 
     <footer>
         <div class="continer_footer">
@@ -56,6 +62,8 @@
                 <a class="a_nosotros" href="Nosotros.html#quienes_somos">Quienes somos</a>
                 <a class="a_nosotros" href="Nosotros.html#mision">Nuestra mision</a>
                 <a class="a_nosotros" href="Nosotros.html#vision">Nuestra vision</a>
+                <a class="a_nosotros" href="Nosotros.html#ubicacion">Nuestra Sucursal</a>
+                
             </div>
 
             <div class="conctactos">
@@ -69,6 +77,7 @@
                 <a class="a_QA" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
                 <a class="a_QA" href="pedidos.html"> Revisa el estadp de tu pedido </a>
                 <a class="a_QA" href="tyc.html">Terminos y condiciones</a>
+
             </div>
 
             <div class="Pagos">
@@ -79,9 +88,17 @@
         <p>Hecho por Othan - Todos los derechos reservados</p>
 
     </footer>
-
+    <!--Agregando mapa y tambien mi api key de google------------------------------------------------------------>
+    <script src="mapa.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap">
+    </script>
 </body>
 </html>
+
+
+
+
 
 
 
