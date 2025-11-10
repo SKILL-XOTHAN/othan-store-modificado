@@ -8,48 +8,48 @@ function agregarCarrito(nombre, precio) {
 
 
 const productos = {
-
-    buzo1: {
+     buzo1: {
         nombre: "Buzo nike negro",
         precio: 15000,
-        img: "../../imga/BUZO2.jpg",
+        img: "/othan-store-modificado/imga/BUZO2.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     },
     buzo2: {
         nombre: "Buzo nike negro",
         precio: 15000,
-        img: "../../imga/BUZO2.jpg",
+        img: "/othan-store-modificado/imga/BUZO2.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     },
     buzo3: {
         nombre: "Buzo nike negro",
         precio: 15000,
-        img: "../../imga/BUZO2.jpg",
+        img: "/othan-store-modificado/imga/buzo.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     },
     buzo4: {
         nombre: "Buzo nike negro",
         precio: 15000,
-        img: "../../imga/BUZO2.jpg",
+        img: "/othan-store-modificado/imga/buzo.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     }
+
+
+
+
     
     
-
-
-
     
 
 };
@@ -153,6 +153,7 @@ if (producto) {
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
 }
+
 
 
 
