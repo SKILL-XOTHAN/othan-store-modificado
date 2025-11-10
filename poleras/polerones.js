@@ -9,49 +9,42 @@ function agregarCarrito(nombre, precio) {
 
 const productos = {
 
-    poleron1: {
+     poleron1: {
         nombre: "Polera Emporio Armani azul",
         precio: 15000,
-        img: "../../imga/polerontiger.jpg",
+        img: "/othan-store-modificado/imga/polerontiger.jpg",
         descripcion: `Polera Emporio Armani azul confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     },
     poleron2: {
         nombre: "Polera Emporio Armani azul",
         precio: 15000,
-        img: "../../imga/poleronazul.jpg",
+        img: "/othan-store-modificado/imga/poleronazul.jpg",
         descripcion: `Polera Emporio Armani azul confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     },
     poleron3: {
         nombre: "Polera Emporio Armani negra",
         precio: 15000,
-        img: "../../imga/poleronnegro.jpg",
+        img: "/othan-store-modificado/imga/poleronnegro.jpg",
         descripcion: `Polera Emporio Armani negra confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     },
     poleron4: {
         nombre: "Polera Emporio Armani celeste",
         precio: 15000,
-        img: "../../imga/poleron kappa.jpg",
+        img: "/othan-store-modificado/imga/poleron kappa.jpg",
         descripcion: `Polera Emporio Armani celeste confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     }
-    
-    
-
-
-
-    
-
 };
 // Obtener producto seleccionado
 const id = localStorage.getItem('productoId');
@@ -152,3 +145,4 @@ if (producto) {
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
 }
+
