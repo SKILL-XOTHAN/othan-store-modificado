@@ -14,6 +14,7 @@ const BASE_URL = "http://localhost:3000";
 let pedidoID = new URLSearchParams(window.location.search).get("pedido");
 let rastreoID = null;
 let progreso = 0;
+let modoSimulado = false;
 
 // Si no hay pedido, redirigir a la página principal
 if (!pedidoID) {
@@ -30,27 +31,37 @@ async function cargarPedido() {
     const pedido = await respuesta.json();
     rastreoID = pedido.rastreoID;
     progreso = pedido.estado || 0;
-
-    // Mostrar en pantalla
-    orderID.textContent = pedidoID;
-    trackingID.textContent = rastreoID;
-    barraProgreso.style.width = `${progreso}%`;
-    updateButtonClasses();
-    botonProgreso.textContent = progreso >= 100 ? "Reiniciar" : "Avanzar";
   } catch (error) {
-    console.warn("Error al cargar el pedido:", error);
-    alert(
-      "No se pudo cargar el pedido. Verifica el número e intenta nuevamente."
-    );
-    window.location.href = "pedidos.html";
+    console.warn("No se pudo conectar al servidor, usando datos simulados...");
+    modoSimulado = true;
+
+    // Simular datos falsos
+    rastreoID = "SIM-" + Math.floor(Math.random() * 100000);
+    const niveles = [0, 33.33, 66.66, 100];
+    progreso = niveles[Math.floor(Math.random() * niveles.length)];
   }
+
+  // Mostrar en pantalla
+  orderID.textContent = pedidoID;
+  trackingID.textContent = rastreoID;
+  barraProgreso.style.width = `${progreso}%`;
+  updateButtonClasses();
+  botonProgreso.textContent = progreso >= 100 ? "Reiniciar" : "Avanzar";
 }
 
 // === Función: Guardar el progreso actualizado ===
 async function guardarPedido() {
+  if (modoSimulado) {
+    console.log("(Simulado) Pedido actualizado:", {
+      pedidoID,
+      rastreoID,
+      estado: progreso,
+    });
+    return;
+  }
+
   try {
     const data = { pedidoID, rastreoID, estado: progreso };
-
     const respuesta = await fetch(`${BASE_URL}/guardarPedido`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -80,7 +91,6 @@ function updateButtonClasses() {
 // === Función: Avanzar o reiniciar progreso ===
 function updateProgressBar() {
   botonProgreso.disabled = true;
-
   progreso = progreso >= 100 ? 0 : Math.min(progreso + 100 / 6, 100);
 
   barraProgreso.style.width = `${progreso}%`;
