@@ -5,14 +5,13 @@ html {
 body {
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
     color: #f8f9fa;
-    line-height: 1.6;   
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
 }
-
 
 /* ====== HEADER ====== */
 header {
@@ -100,8 +99,6 @@ header {
     transform: scale(1.05);
 }
 
-
-
 /* ====== NAV FILTROS ====== */
 
 .filtros {
@@ -128,8 +125,7 @@ header {
     transform: scale(1.1);
 }
 
-
-main{
+main {
     flex: 1;
     padding-top: 80px;
     margin: 30px;
@@ -137,7 +133,7 @@ main{
     flex-direction: column;
     justify-content: flex-start; /* el contenido arriba */
 }
-main h2{
+main h2 {
     font-size: 29px;
     scroll-margin-top: 100px;
 }
@@ -146,28 +142,26 @@ p {
     padding: 10px;
     font-size: 18px;
 }
-#quienes_somos{
+#quienes_somos {
     scroll-margin-top: 80px;
-    text-align: center  ;
-}
-#mision{
     text-align: center;
 }
-#vision{
+#mision {
     text-align: center;
 }
-
+#vision {
+    text-align: center;
+}
 
 /* ======Mapa======*/
 .ubicacion {
     text-align: center;
     color: #ffcc00;
     padding: 40px 20px;
-    
 }
 
 .ubicacion h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -199,34 +193,33 @@ footer h2 {
     font-size: 25px;
     color: goldenrod;
 }
-footer a{
+footer a {
     color: #f1f1f1;
     text-decoration: none;
 }
 
-.continer_footer{
+.container_footer {
     display: flex;
     flex-direction: row;
     margin-top: auto;
 }
-.a_nosotros{
+.a_nosotros {
     display: block;
     margin: 10px 50px 10px 100px;
 }
-.a_conctactos{
+.a_conctactos {
     display: block;
     margin: 10px 50px 10px 100px;
 }
-.a_QA{
+.a_QA {
     display: block;
     margin: 10px 50px 10px 100px;
 }
-.pagos{
-    margin:10px 50px 10px 100px ;
+.pagos {
+    margin: 10px 50px 10px 100px;
 }
-.banco_estado{
+.banco_estado {
     width: 125px;
     height: 65px;
     border-radius: 12px;
 }
-

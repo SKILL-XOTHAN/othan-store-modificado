@@ -1,25 +1,32 @@
 /* ====== ESTILOS GENERALES ====== */
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0a0a0a;
     color: #f8f9fa;
     line-height: 1.6;
 }
 
+main {
+    flex-grow: 1;
+}
+
 /* ====== HEADER ====== */
+#header,
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     height: 80px;
     width: 100%;
     background: linear-gradient(135deg, #000000, #1c1c1c);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 40px;
     z-index: 1000;
+    flex-shrink: 0;
 }
 
 .header_container {
@@ -93,47 +100,45 @@ header {
     transform: scale(1.05);
 }
 
-
 /* ====== NAV FILTROS (franja muy fina) ====== */
 .filtros {
-display: flex;
-justify-content: center;
-  gap: 12px;                /* menos espacio entre botones */
-width: 100%;
-padding: 12px 0;          /* franja más delgada */
-background: #070707;      /* blanco */
-border-top: 1px solid goldenrod;
-border-bottom: 1px solid rgb(255, 183, 0);
-box-shadow: 0 1px 6px rgb(0, 0, 0);
-  position: sticky;         /* se queda visible al hacer scroll */
-  top: 80px;                /* justo debajo del header */
-z-index: 999;
+    display: flex;
+    justify-content: center;
+    gap: 12px; /* menos espacio entre botones */
+    width: 100%;
+    padding: 12px 0; /* franja más delgada */
+    background: #070707; /* blanco */
+    border-top: 1px solid goldenrod;
+    border-bottom: 1px solid rgb(255, 183, 0);
+    box-shadow: 0 1px 6px rgb(0, 0, 0);
+    position: sticky; /* se queda visible al hacer scroll */
+    top: 80px; /* justo debajo del header */
+    flex-shrink: 0;
+    z-index: 999;
 }
 
 .filtros button {
-background: goldenrod;
-border: none;
-color: white;
-font-weight: 600;
-padding: 4px 8px;         /* botones más pequeños */
-border-radius: 14px;
-font-size: 12px;           /* fuente más pequeña */
-cursor: pointer;
-transition: all 0.3s ease;
+    background: goldenrod;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 4px 8px; /* botones más pequeños */
+    border-radius: 14px;
+    font-size: 12px; /* fuente más pequeña */
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .filtros button:hover {
-background: #eac600;
-transform: translateY(-1px);
+    background: #eac600;
+    transform: translateY(-1px);
 }
-
 
 /* ====== SLIDER DE ANUNCIOS ====== */
 .anuncio {
     width: 100%;
     overflow: hidden;
     background: linear-gradient(180deg, #0a0a0a, #111);
-    border-top: 2px solid goldenrod;
     border-bottom: 2px solid goldenrod;
     display: flex;
     justify-content: center;
@@ -195,7 +200,6 @@ transform: translateY(-1px);
     }
 }
 
-
 /* ====== PRODUCTOS ====== */
 /* ====== TÍTULO DE LA SECCIÓN ====== */
 #polera-1 {
@@ -207,7 +211,7 @@ transform: translateY(-1px);
     letter-spacing: 1.2px;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.7);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* ====== GRID DE PRODUCTOS CENTRADO ====== */
@@ -263,7 +267,7 @@ transform: translateY(-1px);
     margin: 14px 0 8px;
     color: goldenrod;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -273,7 +277,7 @@ transform: translateY(-1px);
     font-size: 15.5px;
     color: #ddd;
     line-height: 1.4;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 /* ====== BOTÓN AGREGAR AL CARRITO ====== */
@@ -325,7 +329,7 @@ transform: translateY(-1px);
 }
 
 .ubicacion h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -339,7 +343,6 @@ transform: translateY(-1px);
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
 }
-
 
 /* ====== CARRITO ====== */
 #carrito {
@@ -382,10 +385,10 @@ transform: translateY(-1px);
 p {
     text-align: center;
     color: gold;
-
 }
 
 /* ====== FOOTER ====== */
+#footer,
 footer {
     text-align: center;
     padding: 20px;
@@ -395,17 +398,20 @@ footer {
     border-top: 2px solid goldenrod;
 }
 
+#footer p,
 footer p {
     margin: 25px;
     font-size: 14px;
     color: #ddd;
 }
 
+#footer h2,
 footer h2 {
     font-size: 25px;
     color: goldenrod;
 }
-footer a{
+#footer a,
+footer a {
     color: #f1f1f1;
     text-decoration: none;
 }
@@ -439,35 +445,34 @@ footer a{
     }
 }
 
-
-.continer_footer{
+.continer_footer {
     display: flex;
     flex-direction: row;
     margin-top: auto;
+    justify-content: center;
 }
-.a_nosotros{
+.a_nosotros {
     display: block;
     margin: 10px 50px 10px 100px;
 }
-.a_conctactos{
-    display: block;
-    margin: 10px 50px 10px 100px;
-
-}
-.a_QA{
+.a_conctactos {
     display: block;
     margin: 10px 50px 10px 100px;
 }
-.pagos{
+.a_QA {
     display: block;
-    margin:10px 50px 10px 55px ;
+    margin: 10px 50px 10px 100px;
 }
-.banco_estado{
+.pagos {
+    display: block;
+    margin: 10px 50px 10px 55px;
+}
+.banco_estado {
     width: 125px;
     height: 65px;
+    object-fit: cover;
     border-radius: 12px;
 }
-
 
 /* ====== TÍTULO DE LA SECCIÓN ====== */
 #chaquetas {
@@ -479,7 +484,7 @@ footer a{
     letter-spacing: 1.2px;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.7);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* ====== GRID DE PRODUCTOS ====== */
@@ -535,7 +540,7 @@ footer a{
     margin: 14px 0 8px;
     color: goldenrod;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -545,7 +550,7 @@ footer a{
     font-size: 15.5px;
     color: #ddd;
     line-height: 1.4;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 /* ====== BOTÓN AGREGAR AL CARRITO ====== */
@@ -589,9 +594,7 @@ footer a{
     }
 }
 
-
 /* ====== GRID DE ZAPATILLAS ====== */
-
 
 #zapatilla {
     text-align: center;
@@ -602,7 +605,7 @@ footer a{
     letter-spacing: 1.2px;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.7);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* ====== GRID DE PRODUCTOS ====== */
@@ -658,7 +661,7 @@ footer a{
     margin: 14px 0 8px;
     color: goldenrod;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -668,7 +671,7 @@ footer a{
     font-size: 15.5px;
     color: #ddd;
     line-height: 1.4;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 /* ====== BOTÓN AGREGAR AL CARRITO ====== */
@@ -712,12 +715,7 @@ footer a{
     }
 }
 
-
-
-
-
 /*  conjunto  */
-
 
 #conjunto {
     text-align: center;
@@ -728,7 +726,7 @@ footer a{
     letter-spacing: 1.2px;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.7);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* ====== GRID DE PRODUCTOS ====== */
@@ -784,7 +782,7 @@ footer a{
     margin: 14px 0 8px;
     color: goldenrod;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -794,7 +792,7 @@ footer a{
     font-size: 15.5px;
     color: #ddd;
     line-height: 1.4;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 /* ====== BOTÓN AGREGAR AL CARRITO ====== */
@@ -838,9 +836,7 @@ footer a{
     }
 }
 
-
 /*       BUZOS     */
-
 
 #buzos {
     text-align: center;
@@ -851,7 +847,7 @@ footer a{
     letter-spacing: 1.2px;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(218, 165, 32, 0.7);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* ====== GRID DE PRODUCTOS ====== */
@@ -907,7 +903,7 @@ footer a{
     margin: 14px 0 8px;
     color: goldenrod;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -917,7 +913,7 @@ footer a{
     font-size: 15.5px;
     color: #ddd;
     line-height: 1.4;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", sans-serif;
 }
 
 /* ====== BOTÓN AGREGAR AL CARRITO ====== */
@@ -960,5 +956,3 @@ footer a{
         height: 220px;
     }
 }
-
-
