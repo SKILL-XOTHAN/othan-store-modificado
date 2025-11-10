@@ -1,0 +1,226 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0b0b;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+#detalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 0 20px;
+}
+
+/* ------------------- IMAGEN DEL PRODUCTO ------------------- */
+.imagen-producto {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+.imagen-producto img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* ------------------- INFORMACIÓN DEL PRODUCTO ------------------- */
+.info {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+.info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.precio {
+    font-size: 1.5rem;
+    color: #f0c14b;
+    margin-bottom: 20px;
+}
+
+/* ------------------- TALLAS ------------------- */
+.tallas strong {
+    display: block;
+    margin-bottom: 8px;
+}
+.tallas-opciones span {
+    border: 1px solid #888;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.tallas-opciones span:hover,
+.tallas-opciones span.active {
+    background-color: #f0c14b;
+    color: #000;
+}
+
+/* ------------------- BOTÓN AGREGAR ------------------- */
+.info button {
+    background-color: #f0c14b;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+.info button:hover {
+    background-color: #ffdf70;
+}
+
+/* ------------------- DESCRIPCIÓN CORTA ------------------- */
+.descripcion {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.envio-info {
+    margin-top: 25px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 25px 30px;
+    color: #f5f5f5;
+    max-width: 500px;
+}
+
+.envio-info .texto-principal {
+    font-weight: 600;
+    color: #f0c14b;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+.envio-info .texto-principal span {
+    display: block;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 0.95rem;
+}
+
+.talla-envio {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+.btn-talla {
+    background: transparent;
+    border: 1px solid #f0c14b;
+    color: #f0c14b;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.btn-talla:hover {
+    background: #f0c14b;
+    color: #0b0b0b;
+}
+
+.opciones-envio label {
+    display: block;
+    background: #0b0b0b;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.opciones-envio label:hover {
+    border-color: #f0c14b;
+}
+.opciones-envio label.activo {
+    border-color: #f0c14b;
+    background: #1a1a1a;
+    box-shadow: 0 0 8px #f0c14b33;
+}
+.opciones-envio input[type="radio"] {
+    accent-color: #f0c14b;
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+.opciones-envio span {
+    font-weight: 600;
+    color: #fff;
+}
+.opciones-envio p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 3px 0 0 25px;
+}
+
+.xyz-info {
+    margin-top: -30px; /* Subida: antes 80px */
+    background-color: #111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 40px 60px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.xyz-info h3 {
+    font-size: 1.4rem;
+    color: #f0c14b;
+    margin-top: 35px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #222;
+    padding-bottom: 8px;
+}
+.xyz-info p,
+.xyz-info ul {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+.xyz-info ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+/* ------------------- RESEÑAS ------------------- */
+.resenas-list .resena {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: 1px solid #222;
+    border-radius: 10px;
+    background: #111;
+}
+.resenas-list strong {
+    color: #f0c14b;
+    font-size: 1rem;
+}
+
+.volver {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 80px;
+}
+.volver a {
+    text-decoration: none;
+    color: #0b0b0b;
+    background-color: #f0c14b;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.volver a:hover {
+    background-color: #d6a93a;
+}
+

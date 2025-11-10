@@ -1,0 +1,27 @@
+{
+  "1111-AAAA": {
+    "pedidoID": "1111-AAAA",
+    "rastreoID": 11111111,
+    "estado": 16.666666666666668
+  },
+  "2222-BBBB": {
+    "pedidoID": "2222-BBBB",
+    "rastreoID": 22222222,
+    "estado": 66.66
+  },
+  "3333-CCCC": {
+    "pedidoID": "3333-CCCC",
+    "rastreoID": 33333333,
+    "estado": 100
+  },
+  "4444-DDDD": {
+    "pedidoID": "4444-DDDD",
+    "rastreoID": 44444444,
+    "estado": 0
+  },
+  "5555-EEEE": {
+    "pedidoID": "5555-EEEE",
+    "rastreoID": 55555555,
+    "estado": 16.666666666666668
+  }
+}
