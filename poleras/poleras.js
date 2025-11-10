@@ -112,7 +112,7 @@ if (producto) {
                 </div>
             </div>
 
-            <button onclick="agregarCarrito('${producto.nombre}', ${producto.precio}, ${producto.img})">Agregar al carrito</button>
+            <button onclick="agregarCarrito('${producto.nombre}', ${producto.precio})">Agregar al carrito</button>
 
             <!-- SECCIÓN ENVÍO Y OPCIONES -->
             <div class="envio-info">
@@ -191,6 +191,7 @@ if (producto) {
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
 }
+
 
 
 
