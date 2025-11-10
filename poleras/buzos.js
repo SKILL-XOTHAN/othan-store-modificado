@@ -11,7 +11,7 @@ const productos = {
      buzo1: {
         nombre: "Buzo nike negro",
         precio: 15000,
-        img: "/othan-store-modificado/imga/BUZO2.jpg",
+        img: "/othan-store-modificado/imga/buzo.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -20,7 +20,7 @@ const productos = {
     buzo2: {
         nombre: "Buzo nike negro",
         precio: 15000,
-        img: "/othan-store-modificado/imga/BUZO2.jpg",
+        img: "/othan-store-modificado/imga/buzo.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -153,6 +153,7 @@ if (producto) {
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
 }
+
 
 
 
