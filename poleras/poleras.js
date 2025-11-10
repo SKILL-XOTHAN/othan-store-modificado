@@ -4,9 +4,6 @@ function agregarCarrito(nombre, precio) {
     alert(nombre + " agregada al carrito por $" + precio.toLocaleString());
 }
 
-
-
-
 const productos = {
     
     drip: {
@@ -194,6 +191,7 @@ if (producto) {
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
 }
+
 
 
 
