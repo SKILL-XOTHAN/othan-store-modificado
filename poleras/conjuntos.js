@@ -12,29 +12,29 @@ const productos = {
     conjunto1: {
         nombre: "Polera armani negra",
         precio: 15000,
-        img: "../../imga/drip.webp",
+        img: "/othan-store-modificado/imga/drip.webp",
         descripcion: `Conjunto drip confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     },
-        conjunto2: {
+    conjunto2: {
         nombre: "nike tech gris",
         precio: 15000,
-        img: "../../imga/niketech.jpg",
+        img: "/othan-store-modificado/imga/niketech.jpg",
         descripcion: `Conjunto nike tech gris confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     },
-        conjunto3: {
+    conjunto3: {
         nombre: "nike tech negro",
         precio: 15000,
-        img: "../../imga/niketechnegro.jpg",
+        img: "/othan-store-modificado/imga/niketechnegro.jpg",
         descripcion: `Conjunto nike tech negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S","M","L"]
+        tallas: ["S", "M", "L"]
     }
    
 };
@@ -137,4 +137,5 @@ if (producto) {
 
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
+
 }
