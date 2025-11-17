@@ -43,35 +43,6 @@
                 <img src="imga/aen.jpg" data-id="aen" />
             </div>
         </section>
- <!-- ANUNCIOS -->
-    <section class="anuncio">
-        <div class="anuncios">
-            <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','drip')">
-            <img src="imga/drip2.jpg" alt="drip"></a>
-
-            <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','bossnegra')">
-            <img src="imga/boss.jpg" alt="drip"></a>
-
-            <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','mkblanca')">
-            <img src="imga/mk blanca.jpg" alt="drip"></a>
-
-            <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','tommyne')">
-            <img src="imga/tommy ne.jpg" alt="drip"></a>
-
-            <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','mkne')">
-            <img src="imga/mk ne.jpg" alt="polera"></a>
-
-            <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','tommybl')">
-            <img src="imga/tomy blanca.jpg" alt="polera"></a>
-
-            <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','mosne')">
-            <img src="imga/mos ne.jpg" alt="polera"></a>
-
-            <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','aen')">
-            <img src="imga/aen.jpg" alt="polera"></a>
-
-        </div>
-    </section>
 
         <script>
             document.querySelectorAll(".anuncios img").forEach((img) => {
@@ -87,7 +58,7 @@
             <section class="productos">
                 <article class="producto">
                     <a
-                        href="/poleras/html/poleras.html"
+                        href="poleras/poleras.html"
                         onclick="localStorage.setItem('productoId','drip')"
                     >
                         <img src="imga/drip.webp" alt="Conjunto Drip"
@@ -101,164 +72,275 @@
                         Agregar al carrito
                     </button>
                 </article>
-  <main>
-        <p id="polera-1"> POLERA </p>
-        <section class="productos">
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','drip')">
-                <img src="imga/drip.webp" alt="Conjunto Drip"></a>
-                <h3>Conjunto Drip</h3>
-                <p>$35.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Conjunto Drip', 35000,'imga/drip.webp')">Agregar al carrito</button>
-            </article>
+                <article class="producto">
+                    <a
+                        href="poleras/poleras.html"
+                        onclick="localStorage.setItem('productoId','basicbla')"
+                    >
+                        <img src="imga/basicbla.jpg" alt="Polera blanca básica"
+                    /></a>
+                    <h3>Polera blanca básica</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera blanca básica', 15000,'imga/basicbla.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','basicbla')">
-                <img src="imga/basicbla.jpg" alt="Polera blanca básica"></a>
-                <h3>Polera blanca básica</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Polera blanca básica', 15000,'imga/basicbla.jpg')">Agregar al carrito</button>
-            </article>
+                <article class="producto">
+                    <a
+                        href="poleras/poleras.html"
+                        onclick="localStorage.setItem('productoId','mkblanca')"
+                    >
+                        <img
+                            src="imga/mk blanca.jpg"
+                            alt="Polera Michael Kors blanca"
+                    /></a>
+                    <h3>Polera Michael Kors blanca</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Michael Kors blanca', 15000,'imga/mk blanca.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','mkblanca')">
-                <img src="imga/mk blanca.jpg" alt="Polera Michael Kors blanca"></a>
-                <h3>Polera Michael Kors blanca</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Polera Michael Kors blanca', 15000,'imga/mk blanca.jpg')">Agregar al carrito</button>
-            </article>
+                <article class="producto">
+                    <a
+                        href="poleras/poleras.html"
+                        onclick="localStorage.setItem('productoId','bossnegra')"
+                    >
+                        <img src="imga/boss.jpg" alt="Polera Boss negra"
+                    /></a>
+                    <h3>Polera Boss negra</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Boss negra', 15000, 'imga/boss.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','bossnegra')">
-                <img src="imga/boss.jpg" alt="Polera Boss negra"></a>
-                <h3>Polera Boss negra</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Polera Boss negra', 15000, 'imga/boss.jpg')">Agregar al carrito</button>
-            </article>
+                <article class="producto">
+                    <a
+                        href="poleras/poleras.html"
+                        onclick="localStorage.setItem('productoId','mkne')"
+                    >
+                        <img
+                            src="imga/mk ne.jpg"
+                            alt="Polera Michael Kors negra"
+                    /></a>
+                    <h3>Polera Michael Kors negra</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Michael Kors negra', 15000,'imga/mk ne.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','mkne')">
-                <img src="imga/mk ne.jpg" alt="Polera Michael Kors negra"></a>
-                <h3>Polera Michael Kors negra</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Polera Michael Kors negra', 15000,'imga/mk ne.jpg')">Agregar al carrito</button>
-            </article>
+                <article class="producto">
+                    <a
+                        href="poleras/poleras.html"
+                        onclick="localStorage.setItem('productoId','mosne')"
+                    >
+                        <img src="imga/mos ne.jpg" alt="Polera Moschino negra"
+                    /></a>
+                    <h3>Polera Moschino negra</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Moschino negra', 15000, 'imga/mos ne.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','mosne')">
-                <img src="imga/mos ne.jpg" alt="Polera Moschino negra"></a>
-                <h3>Polera Moschino negra</h3></a>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Polera Moschino negra', 15000, 'imga/mos ne.jpg')">Agregar al carrito</button>
-            </article>
+                <article class="producto">
+                    <a
+                        href="poleras/poleras.html"
+                        onclick="localStorage.setItem('productoId','tommyne')"
+                    >
+                        <img src="imga/tommy ne.jpg" alt="Polera Tommy negra"
+                    /></a>
+                    <h3>Polera Tommy negra</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Tommy negra', 15000,'imga/tommy ne.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','tommyne')">
-                <img src="imga/tommy ne.jpg" alt="Polera Tommy negra"></a>
-                <h3>Polera Tommy negra</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Polera Tommy negra', 15000,'imga/tommy ne.jpg')">Agregar al carrito</button>
-            </article>
+                <article class="producto">
+                    <a
+                        href="poleras/poleras.html"
+                        onclick="localStorage.setItem('productoId','tommybl')"
+                    >
+                        <img
+                            src="imga/tomy blanca.jpg"
+                            alt="Polera Tommy blanca"
+                    /></a>
+                    <h3>Polera Tommy blanca</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Tommy blanca', 15000,'imga/tomy blanca.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','tommybl')">
-                <img src="imga/tomy blanca.jpg" alt="Polera Tommy blanca"></a>
-                <h3>Polera Tommy blanca</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Polera Tommy blanca', 15000,'imga/tomy blanca.jpg')">Agregar al carrito</button>
-            </article>
+                <article class="producto">
+                    <a
+                        href="poleras/poleras.html"
+                        onclick="localStorage.setItem('productoId','aen')"
+                    >
+                        <img
+                            src="imga/aen.jpg"
+                            alt="Polera Emporio Armani negra"
+                    /></a>
+                    <h3>Polera Emporio Armani negra</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Emporio Armani negra', 15000,'imga/aen.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
+            </section>
 
-            <article class="producto">
-                <a href="poleras/poleras.html" onclick="localStorage.setItem('productoId','aen')">
-                <img src="imga/aen.jpg"  alt="Polera Emporio Armani negra" ></a>
-                <h3>Polera Emporio Armani negra</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000,'imga/aen.jpg')">Agregar al carrito</button>
-            </article>
+            <!--  chaquetas   -->
 
-        </section>
-    </main>
+            <p id="chaquetas">Polerones</p>
+            <section class="productos">
+                <article class="poleron">
+                    <a
+                        href="poleras/polerones.html"
+                        onclick="localStorage.setItem('productoId','poleron1')"
+                    >
+                        <img src="imga/polerontiger.jpg" alt="Polerón 1"
+                    /></a>
+                    <h3>Polera Emporio Armani azul</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Emporio Armani azul', 15000,'imga/polerontiger.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
+                <article class="poleron">
+                    <a
+                        href="poleras/polerones.html"
+                        onclick="localStorage.setItem('productoId','poleron2')"
+                    >
+                        <img src="imga/poleronazul.jpg" alt="Polerón 2"
+                    /></a>
+                    <h3>Polera Emporio Armani azul</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Emporio Armani azul', 15000,'imga/poleronazul.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
+                <article class="poleron">
+                    <a
+                        href="poleras/polerones.html"
+                        onclick="localStorage.setItem('productoId','poleron3')"
+                    >
+                        <img src="imga/poleronnegro.jpg" alt="Polerón 3"
+                    /></a>
+                    <h3>Polera Emporio Armani negra</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Emporio Armani negra', 15000,'imga/poleronnegro.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
+                <article class="poleron">
+                    <a
+                        href="poleras/polerones.html"
+                        onclick="localStorage.setItem('productoId','poleron4')"
+                    >
+                        <img src="imga/poleron kappa.jpg" alt="Polerón 4"
+                    /></a>
+                    <h3>Polera Emporio Armani celeste</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('Polera Emporio Armani celeste', 15000,'imga/poleron kappa.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
+            </section>
 
- <!--  chaquetas   -->
-    <main>
-    <p id="chaquetas">Polerones</p>
-    <section class="productos">
-        <article class="poleron">
-            <a href="poleras/polerones.html" onclick="localStorage.setItem('productoId','poleron1')">
-            <img src="imga/polerontiger.jpg" alt="Polerón 1"></a>
-            <h3>Polera Emporio Armani azul</h3>
-            <p>$15.000</p>
-            <p>Tallas disponibles: S, M, L</p>
-            <button onclick="agregarCarrito('Polera Emporio Armani azul', 15000,'imga/polerontiger.jpg')">Agregar al carrito</button>
-        </article>
-        <article class="poleron">
-            <a href="poleras/polerones.html" onclick="localStorage.setItem('productoId','poleron2')">
-            <img src="imga/poleronazul.jpg" alt="Polerón 2"></a>
-            <h3>Polera Emporio Armani azul</h3>
-            <p>$15.000</p>
-            <p>Tallas disponibles: S, M, L</p>
-            <button onclick="agregarCarrito('Polera Emporio Armani azul', 15000,'imga/poleronazul.jpg')">Agregar al carrito</button>
-        </article>
-        <article class="poleron">
-            <a href="poleras/polerones.html" onclick="localStorage.setItem('productoId','poleron3')">
-            <img src="imga/poleronnegro.jpg" alt="Polerón 3"></a>
-            <h3>Polera Emporio Armani negra</h3>
-            <p>$15.000</p>
-            <p>Tallas disponibles: S, M, L</p>
-            <button onclick="agregarCarrito('Polera Emporio Armani negra', 15000,'imga/poleronnegro.jpg')">Agregar al carrito</button>
-        </article>
-        <article class="poleron">
-            <a href="poleras/polerones.html" onclick="localStorage.setItem('productoId','poleron4')">
-            <img src="imga/poleron kappa.jpg" alt="Polerón 4"></a>
-            <h3>Polera Emporio Armani celeste</h3>
-            <p>$15.000</p>
-            <p>Tallas disponibles: S, M, L</p>
-            <button onclick="agregarCarrito('Polera Emporio Armani celeste', 15000,'imga/poleron kappa.jpg')">Agregar al carrito</button>
-        </article>
-    </section>
-</main>
+            <!--        BUZOS      -->
+            <p id="buzos">BUZOS</p>
+            <section class="productos">
+                <article class="buzos">
+                    <a
+                        href="poleras/buzos.html"
+                        onclick="localStorage.setItem('productoId','buzo1')"
+                    >
+                        <img src="imga/BUZO2.jpg" alt="buzo"
+                    /></a>
+                    <h3>BUZO NIKE NEGRO</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-    <!--        BUZOS      -->
-    <main>
-        <P id="buzos"> BUZOS </P>
-        <section class="productos">
+                <article class="buzos">
+                    <a
+                        href="poleras/buzos.html"
+                        onclick="localStorage.setItem('productoId','buzo2')"
+                    >
+                        <img src="imga/BUZO2.jpg" alt="buzo"
+                    /></a>
+                    <h3>BUZO NIKE NEGRO</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="buzos">
-                <a href="poleras/buzos.html" onclick="localStorage.setItem('productoId','buzo1')">
-                <img src="imga/BUZO2.jpg" alt="buzo"></a>
-            <h3>BUZO NIKE NEGRO</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')">Agregar al carrito</button>
-            </article>
-
-            <article class="buzos">
-                <a href="poleras/buzos.html" onclick="localStorage.setItem('productoId','buzo2')">
-                <img src="imga/BUZO2.jpg" alt="buzo"></a>
-            <h3>BUZO NIKE NEGRO</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')">Agregar al carrito</button>
-            </article>
-
-            <article class="buzos">
-                <a href="poleras/buzos.html" onclick="localStorage.setItem('productoId','buzo3')">
-                <img src="imga/BUZO2.jpg" alt="buzo"></a>
-            <h3>BUZO NIKE NEGRO</h3>
-                <p>$15.000</p>
-                <p>Tallas disponibles: S, M, L</p>
-                <button onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')">Agregar al carrito</button>
-            </article>
+                <article class="buzos">
+                    <a
+                        href="poleras/buzos.html"
+                        onclick="localStorage.setItem('productoId','buzo3')"
+                    >
+                        <img src="imga/BUZO2.jpg" alt="buzo"
+                    /></a>
+                    <h3>BUZO NIKE NEGRO</h3>
+                    <p>$15.000</p>
+                    <p>Tallas disponibles: S, M, L</p>
+                    <button
+                        onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
                 <article class="buzos">
                     <a
@@ -277,9 +359,7 @@
                     </button>
                 </article>
             </section>
-        </main>
 
-        <main>
             <p id="conjunto">CONJUNTO</p>
             <section class="productos">
                 <article class="conjunto">
@@ -331,9 +411,7 @@
                     </button>
                 </article>
             </section>
-        </main>
 
-        <main>
             <p id="zapatilla">ZAPATILLA</p>
 
             <section class="productos">
@@ -371,72 +449,50 @@
                     </button>
                 </article>
 
-            <article class="zapatilla">
-                <a href="poleras/zapatillas.html" onclick="localStorage.setItem('productoId','tillas3')">
-                <img src="imga/r4thunder.jpg" alt="tillas"></a>
-            <h3>Jordan R4 red thunder</h3>
-                <p>$65.000</p>
-                <p>Tallas disponibles: 40,41,42,41,43,44</p>
-                <button onclick="agregarCarrito('Jordan R4 red thunder', 65000,'imga/r4thunder.jpg' )">Agregar al carrito</button>
-            </article>
+                <article class="zapatilla">
+                    <a
+                        href="poleras/zapatillas.html"
+                        onclick="localStorage.setItem('productoId','tillas3')"
+                    >
+                        <img src="imga/r4thunder.jpg" alt="tillas"
+                    /></a>
+                    <h3>Jordan R4 red thunder</h3>
+                    <p>$65.000</p>
+                    <p>Tallas disponibles: 40,41,42,41,43,44</p>
+                    <button
+                        onclick="agregarCarrito('Jordan R4 red thunder', 65000,'imga/r4thunder.jpg' )"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
 
-            <article class="zapatilla">
-                <a href="poleras/zapatillas.html" onclick="localStorage.setItem('productoId','tillas4')">
-                <img src="imga/R4black.jpg" alt="tillas"></a>
-            <h3>Jordan R4 black cat</h3>
-                <p>$65.000</p>
-                <p>Tallas disponibles: 40,41,42,41,43,44</p>
-                <button onclick="agregarCarrito('Jordan R4 black cat', 65000, 'imga/R4black.jpg')">Agregar al carrito</button>
-            </article>
-        </section>
-    </main>
+                <article class="zapatilla">
+                    <a
+                        href="poleras/zapatillas.html"
+                        onclick="localStorage.setItem('productoId','tillas4')"
+                    >
+                        <img src="imga/R4black.jpg" alt="tillas"
+                    /></a>
+                    <h3>Jordan R4 black cat</h3>
+                    <p>$65.000</p>
+                    <p>Tallas disponibles: 40,41,42,41,43,44</p>
+                    <button
+                        onclick="agregarCarrito('Jordan R4 black cat', 65000, 'imga/R4black.jpg')"
+                    >
+                        Agregar al carrito
+                    </button>
+                </article>
+            </section>
+        </main>
 
+        <script src="carrito.js"></script>
 
+        <script src="reel.js" defer></script>
 
-
-<footer>
-        <div class="container_footer">
-            <div class="sobre_nosotros">
-                <h2 class="a_nosotros" id="nosotros">Nosotros</h2>
-                <a class="a_nosotros" href="Nosotros.html#quienes_somos">Quienes somos</a>
-                <a class="a_nosotros" href="Nosotros.html#mision">Nuestra mision</a>
-                <a class="a_nosotros" href="Nosotros.html#vision">Nuestra vision</a>
-                <a class="a_nosotros" href="Nosotros.html#ubicacion">Nuestra Sucursal</a>
-                
-            </div>
-
-            <div class="contactos">
-                <h2 class="a_conctactos">Contactos</h2>
-                <a class="a_conctactos" href="https://www.instagram.com/othan_store/?igsh=MWVhODE5ZTNzcWZ6bg%3D%3D#">Instragram</a>
-                <a class="a_conctactos" href="https://m.facebook.com/story.php?story_fbid=pfbid033CEe1oW9Bbch984GAdjyEv1rWiCN6FkuSznMPDZ3gRdhr6avfQLpV3K3umQ2pcBrl&id=100021710412088&mibextid=Nif5oz">facebook</a>
-            </div>
-
-            <div class="QA">
-                <h2 class="a_QA">Otros</h2>
-                <a class="a_QA" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                <a class="a_QA" href="pedidos.html"> Revisa el estadp de tu pedido </a>
-                <a class="a_QA" href="tyc.html">Terminos y condiciones</a>
-
-            </div>
-
-            <div class="Pagos">
-                <h2 class="pagos">Metodos de Pagos</h2>
-                <img class="banco_estado" src="imga/bancoestado.jpg" alt="Banco estado">
-            </div>
-        </div>
-        <p>Hecho por Othan - Todos los derechos reservados</p>
-
-    </footer>
-
-    <script src="carrito.js"></script>
-
-        <script src="reel.js" defer>
-            video
-        </script>
-
+        <div id="footer"></div>
         <script>
             ["header", "footer"].forEach((id) =>
-                fetch(`${id}.html`)
+                fetch(`/${id}.html`)
                     .then((r) => r.text())
                     .then(
                         (html) => (document.getElementById(id).innerHTML = html)
@@ -445,11 +501,3 @@
         </script>
     </body>
 </html>
-
-
-
-
-
-
-
-
