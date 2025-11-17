@@ -7,7 +7,7 @@ const productos = {
     tillas1: {
         nombre: "zapatilla jordan 1 ",
         precio: 65000,
-        img: "/othan-store-modificado/imga/jordan1low.jpg",
+        img: "/imga/jordan1low.jpg",
         descripcion: `zapatilla jordan 1 elaboradas con materiales de alta calidad, combinando cuero genuino y textil para brindar durabilidad y confort.
                       Su diseño clásico e icónico ofrece un estilo urbano y versátil, ideal para combinar con cualquier outfit.
                       La suela de goma antideslizante y la amortiguación interna garantizan una pisada cómoda durante todo el día.
@@ -17,7 +17,7 @@ const productos = {
     tillas2: {
         nombre: "ZAPATILLA LV ",
         precio: 65000,
-        img: "/othan-store-modificado/imga/LV.jpg",
+        img: "/imga/LV.jpg",
         descripcion: `ZAPATILLA LV elaboradas con materiales de alta calidad, combinando cuero genuino y textil para brindar durabilidad y confort.
                       Su diseño clásico e icónico ofrece un estilo urbano y versátil, ideal para combinar con cualquier outfit.
                       La suela de goma antideslizante y la amortiguación interna garantizan una pisada cómoda durante todo el día.
@@ -27,7 +27,7 @@ const productos = {
     tillas3: {
         nombre: "Jordan R4 red thunder ",
         precio: 65000,
-        img: "/othan-store-modificado/imga/r4thunder.jpg",
+        img: "/imga/r4thunder.jpg",
         descripcion: `Zapatillas Jordan R4 red thunder elaboradas con materiales de alta calidad, combinando cuero genuino y textil para brindar durabilidad y confort.
                       Su diseño clásico e icónico ofrece un estilo urbano y versátil, ideal para combinar con cualquier outfit.
                       La suela de goma antideslizante y la amortiguación interna garantizan una pisada cómoda durante todo el día.
@@ -37,7 +37,7 @@ const productos = {
     tillas4: {
         nombre: "Jordan R4 black cat ",
         precio: 65000,
-        img: "/othan-store-modificado/imga/R4black.jpg",
+        img: "/imga/R4black.jpg",
         descripcion: `Zapatillas Jordan R4 black cat elaboradas con materiales de alta calidad, combinando cuero genuino y textil para brindar durabilidad y confort.
                       Su diseño clásico e icónico ofrece un estilo urbano y versátil, ideal para combinar con cualquier outfit.
                       La suela de goma antideslizante y la amortiguación interna garantizan una pisada cómoda durante todo el día.
