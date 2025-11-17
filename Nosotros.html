@@ -1,105 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros othan store</title>
-    <link rel="stylesheet" href="Nosotros.css">
-</head>
-<body>
-    <header>
-    <div class="header_container">
-        
-        <!-- Logo -->
-        <div class="logo">
-                <img src="imga/M.png" alt="Logo de Othan Store">
-            </a>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nosotros Othan Store</title>
+        <link rel="stylesheet" href="Nosotros.css" />
+    </head>
+    <body>
+        <div id="header"></div>
 
-        <!-- Barra de búsqueda -->
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar productos...">
-            <button class="search-btn">
-                🔍
-            </button>
-        </div>
+        <main>
+            <h2 id="quienes_somos">Quienes somos</h2>
+            <p>
+                "En Othan Store creemos que la moda es una forma de expresión.
+                Somos una tienda online que busca acercar las últimas tendencias
+                a todas las personas, con productos de calidad, accesibles y
+                fáciles de comprar desde la comodidad de tu hogar."
+            </p>
+            <h2 id="mision">Nuestra Misión</h2>
+            <p>
+                Ofrecer moda actual y accesible para todos, brindando una
+                experiencia de compra rápida, segura y confiable, donde cada
+                cliente encuentre su estilo ideal.
+            </p>
 
-        <!-- Menú -->
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="producto.html">Inicio</a></li>
-                    <li><a href="login.html" class="boton">Registrarte</a></li>
-                    <li><a href="login1.html" class="boton">Iniciar sesión</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-
-
-    <main>
-        <h2 id="quienes_somos">Quienes somos</h2>
-        <p>"En Othan Store creemos que la moda es una forma de expresión. Somos una tienda online que busca acercar las últimas tendencias a todas las personas, con productos de calidad, accesibles y fáciles de comprar desde la comodidad de tu hogar."</p>
-        <h2 id="mision">Nuestra Mision</h2>
-        <p>Ofrecer moda actual y accesible para todos, brindando una experiencia de compra rápida, segura y confiable, donde cada cliente encuentre su estilo ideal.</p>
-
-        <h2 id="vision">Nuestra Vision</h2>
-        <p>Convertirnos en una de las principales tiendas online de moda en Latinoamérica, reconocida por la innovación, la confianza de nuestros clientes y el compromiso con la autenticidad en cada producto.</p>
+            <h2 id="vision">Nuestra Vision</h2>
+            <p>
+                Convertirnos en una de las principales tiendas online de moda en
+                Latinoamérica, reconocida por la innovación, la confianza de
+                nuestros clientes y el compromiso con la autenticidad en cada
+                producto.
+            </p>
             <!--Section del mapa  --------------------------------------------->
-        <section class="ubicacion">
-        <h2 id="ubicacion">Estamos ubicados en el mall de iquique</h2>
-        <div id="map"></div>
-        </section>
-    </main>
-
-
-
-    <footer>
-        <div class="continer_footer">
-            <div class="sobre_nosotros">
-                <h2 class="a_nosotros" id="nosotros">Nosotros</h2>
-                <a class="a_nosotros" href="Nosotros.html#quienes_somos">Quienes somos</a>
-                <a class="a_nosotros" href="Nosotros.html#mision">Nuestra mision</a>
-                <a class="a_nosotros" href="Nosotros.html#vision">Nuestra vision</a>
-                <a class="a_nosotros" href="Nosotros.html#ubicacion">Nuestra Sucursal</a>
-                
-            </div>
-
-            <div class="conctactos">
-                <h2 class="a_conctactos">Contactos</h2>
-                <a class="a_conctactos" href="">Instragram</a>
-                <a class="a_conctactos" href="">Correo</a>
-            </div>
-
-            <div class="QA">
-                <h2 class="a_QA">Otros</h2>
-                <a class="a_QA" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                <a class="a_QA" href="pedidos.html"> Revisa el estadp de tu pedido </a>
-                <a class="a_QA" href="tyc.html">Terminos y condiciones</a>
-
-            </div>
-
-            <div class="Pagos">
-                <h2 class="pagos">Metodos de Pagos</h2>
-                <img class="banco_estado" src="imga/bancoestado.jpg" alt="Banco estado">
-            </div>
-        </div>
-        <p>Hecho por Othan - Todos los derechos reservados</p>
-
-    </footer>
-    <!--Agregando mapa y tambien mi api key de google------------------------------------------------------------>
-    <script src="mapa.js"></script>
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap">
-    </script>
-</body>
+            <section class="ubicacion">
+                <h2 id="ubicacion">Estamos ubicados en el mall de Iquique</h2>
+                <div id="map"></div>
+            </section>
+        </main>
+        <div id="footer"></div>
+        <script>
+            ["header", "footer"].forEach((id) =>
+                fetch(`${id}.html`)
+                    .then((r) => r.text())
+                    .then(
+                        (html) => (document.getElementById(id).innerHTML = html)
+                    )
+            );
+        </script>
+        <!--Agregando mapa y también mi api key de google------------------------------------------------------------>
+        <script src="mapa.js"></script>
+        <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"
+        ></script>
+    </body>
 </html>
-
-
-
-
-
-
-
-
