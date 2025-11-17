@@ -1,22 +1,17 @@
-
-//esto da el mensaje de agregado al carrito de compras 
+//esto da el mensaje de agregado al carrito de compras
 function agregarCarrito(nombre, precio) {
     alert(nombre + " agregada al carrito por $" + precio.toLocaleString());
 }
 
-
-
-
 const productos = {
-
     conjunto1: {
-        nombre: "Polera armani negra",
+        nombre: "Polera Armani negra",
         precio: 15000,
         img: "/othan-store-modificado/imga/drip.webp",
         descripcion: `Conjunto drip confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S", "M", "L"]
+        tallas: ["S", "M", "L"],
     },
     conjunto2: {
         nombre: "nike tech gris",
@@ -25,7 +20,7 @@ const productos = {
         descripcion: `Conjunto nike tech gris confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S", "M", "L"]
+        tallas: ["S", "M", "L"],
     },
     conjunto3: {
         nombre: "nike tech negro",
@@ -34,16 +29,14 @@ const productos = {
         descripcion: `Conjunto nike tech negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
-        tallas: ["S", "M", "L"]
-    }
-   
+        tallas: ["S", "M", "L"],
+    },
 };
 
-
 // Obtener producto seleccionado
-const id = localStorage.getItem('productoId');
+const id = localStorage.getItem("productoId");
 const producto = productos[id];
-const detalle = document.getElementById('detalle');
+const detalle = document.getElementById("detalle");
 
 if (producto) {
     detalle.innerHTML = `
@@ -57,17 +50,19 @@ if (producto) {
             <div class="tallas">
                 <strong>Elige tu talla</strong>
                 <div class="tallas-opciones">
-                    ${producto.tallas.map(t => `<span>${t}</span>`).join(' ')}
+                    ${producto.tallas.map((t) => `<span>${t}</span>`).join(" ")}
                 </div>
             </div>
 
-            <button onclick="agregarCarrito('${producto.nombre}', ${producto.precio})">Agregar al carrito</button>
+            <button onclick="agregarCarrito('${producto.nombre}', ${
+        producto.precio
+    })">Agregar al carrito</button>
 
             <!-- SECCIÓN ENVÍO Y OPCIONES -->
             <div class="envio-info">
               <p class="texto-principal">
                 ¿Quieres que llegue en menos de 3 horas?<br>
-                <span>¡Elige Envío Ultrarrápido y recibe tus productos en menos de 3 horas! (*)</span>
+                <span>¡Elige Envío Ultra-rápido y recibe tus productos en menos de 3 horas! (*)</span>
               </p>
 
               <div class="talla-envio">
@@ -117,25 +112,23 @@ if (producto) {
     `;
 
     // Selección de talla activa
-    const spans = detalle.querySelectorAll('.tallas span');
-    spans.forEach(span => {
-        span.addEventListener('click', () => {
-            spans.forEach(s => s.classList.remove('active'));
-            span.classList.add('active');
+    const spans = detalle.querySelectorAll(".tallas span");
+    spans.forEach((span) => {
+        span.addEventListener("click", () => {
+            spans.forEach((s) => s.classList.remove("active"));
+            span.classList.add("active");
         });
     });
 
     // Efecto visual al cambiar método de envío
-    const metodos = detalle.querySelectorAll('.opciones-envio label');
-    metodos.forEach(m => {
-        const input = m.querySelector('input');
-        input.addEventListener('change', () => {
-            metodos.forEach(e => e.classList.remove('activo'));
-            if (input.checked) m.classList.add('activo');
+    const metodos = detalle.querySelectorAll(".opciones-envio label");
+    metodos.forEach((m) => {
+        const input = m.querySelector("input");
+        input.addEventListener("change", () => {
+            metodos.forEach((e) => e.classList.remove("activo"));
+            if (input.checked) m.classList.add("activo");
         });
     });
-
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
-
 }

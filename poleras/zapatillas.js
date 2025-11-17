@@ -1,14 +1,9 @@
-
-//esto da el mensaje de agregado al carrito de compras 
+//esto da el mensaje de agregado al carrito de compras
 function agregarCarrito(nombre, precio) {
     alert(nombre + " agregada al carrito por $" + precio.toLocaleString());
 }
 
-
-
-
 const productos = {
-
     tillas1: {
         nombre: "zapatilla jordan 1 ",
         precio: 65000,
@@ -17,7 +12,7 @@ const productos = {
                       Su diseño clásico e icónico ofrece un estilo urbano y versátil, ideal para combinar con cualquier outfit.
                       La suela de goma antideslizante y la amortiguación interna garantizan una pisada cómoda durante todo el día.
                       Perfectas para quienes buscan destacar con un look moderno sin sacrificar la comodidad.`,
-        tallas: ["40", "41", "42", "43", "44"]
+        tallas: ["40", "41", "42", "43", "44"],
     },
     tillas2: {
         nombre: "ZAPATILLA LV ",
@@ -27,7 +22,7 @@ const productos = {
                       Su diseño clásico e icónico ofrece un estilo urbano y versátil, ideal para combinar con cualquier outfit.
                       La suela de goma antideslizante y la amortiguación interna garantizan una pisada cómoda durante todo el día.
                       Perfectas para quienes buscan destacar con un look moderno sin sacrificar la comodidad.`,
-        tallas: ["40", "41", "42", "43", "44"]
+        tallas: ["40", "41", "42", "43", "44"],
     },
     tillas3: {
         nombre: "Jordan R4 red thunder ",
@@ -37,7 +32,7 @@ const productos = {
                       Su diseño clásico e icónico ofrece un estilo urbano y versátil, ideal para combinar con cualquier outfit.
                       La suela de goma antideslizante y la amortiguación interna garantizan una pisada cómoda durante todo el día.
                       Perfectas para quienes buscan destacar con un look moderno sin sacrificar la comodidad.`,
-        tallas: ["40", "41", "42", "43", "44"]
+        tallas: ["40", "41", "42", "43", "44"],
     },
     tillas4: {
         nombre: "Jordan R4 black cat ",
@@ -47,15 +42,14 @@ const productos = {
                       Su diseño clásico e icónico ofrece un estilo urbano y versátil, ideal para combinar con cualquier outfit.
                       La suela de goma antideslizante y la amortiguación interna garantizan una pisada cómoda durante todo el día.
                       Perfectas para quienes buscan destacar con un look moderno sin sacrificar la comodidad.`,
-        tallas: ["40", "41", "42", "43", "44"]
-    }
-   
+        tallas: ["40", "41", "42", "43", "44"],
+    },
 };
 
 // Obtener producto seleccionado
-const id = localStorage.getItem('productoId');
+const id = localStorage.getItem("productoId");
 const producto = productos[id];
-const detalle = document.getElementById('detalle');
+const detalle = document.getElementById("detalle");
 
 if (producto) {
     detalle.innerHTML = `
@@ -69,17 +63,19 @@ if (producto) {
             <div class="tallas">
                 <strong>Elige tu talla</strong>
                 <div class="tallas-opciones">
-                    ${producto.tallas.map(t => `<span>${t}</span>`).join(' ')}
+                    ${producto.tallas.map((t) => `<span>${t}</span>`).join(" ")}
                 </div>
             </div>
 
-            <button onclick="agregarCarrito('${producto.nombre}', ${producto.precio})">Agregar al carrito</button>
+            <button onclick="agregarCarrito('${producto.nombre}', ${
+        producto.precio
+    })">Agregar al carrito</button>
 
             <!-- SECCIÓN ENVÍO Y OPCIONES -->
             <div class="envio-info">
               <p class="texto-principal">
                 ¿Quieres que llegue en menos de 3 horas?<br>
-                <span>¡Elige Envío Ultrarrápido y recibe tus productos en menos de 3 horas! (*)</span>
+                <span>¡Elige Envío Ultra-rápido y recibe tus productos en menos de 3 horas! (*)</span>
               </p>
 
               <div class="talla-envio">
@@ -129,28 +125,23 @@ if (producto) {
     `;
 
     // Selección de talla activa
-    const spans = detalle.querySelectorAll('.tallas span');
-    spans.forEach(span => {
-        span.addEventListener('click', () => {
-            spans.forEach(s => s.classList.remove('active'));
-            span.classList.add('active');
+    const spans = detalle.querySelectorAll(".tallas span");
+    spans.forEach((span) => {
+        span.addEventListener("click", () => {
+            spans.forEach((s) => s.classList.remove("active"));
+            span.classList.add("active");
         });
     });
 
     // Efecto visual al cambiar método de envío
-    const metodos = detalle.querySelectorAll('.opciones-envio label');
-    metodos.forEach(m => {
-        const input = m.querySelector('input');
-        input.addEventListener('change', () => {
-            metodos.forEach(e => e.classList.remove('activo'));
-            if (input.checked) m.classList.add('activo');
+    const metodos = detalle.querySelectorAll(".opciones-envio label");
+    metodos.forEach((m) => {
+        const input = m.querySelector("input");
+        input.addEventListener("change", () => {
+            metodos.forEach((e) => e.classList.remove("activo"));
+            if (input.checked) m.classList.add("activo");
         });
     });
-
 } else {
     detalle.innerHTML = "<p>Producto no encontrado.</p>";
 }
-
-
-
-
