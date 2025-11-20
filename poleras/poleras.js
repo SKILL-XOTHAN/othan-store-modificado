@@ -7,7 +7,7 @@ const productos = {
     drip: {
         nombre: "Conjunto Drip",
         precio: 35000,
-        img: "/imga/drip.webp",
+        img: "../imga/drip.webp",
         descripcion: `Conjunto drip confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -17,7 +17,7 @@ const productos = {
     basicbla: {
         nombre: "Polera blanca básica",
         precio: 15000,
-        img: "/imga/basicbla.jpg",
+        img: "../imga/basicbla.jpg",
         descripcion: `Polera Tommy blanca confeccionada en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -26,7 +26,7 @@ const productos = {
     mkblanca: {
         nombre: "Polera Michael Kors blanca",
         precio: 15000,
-        img: "/imga/mk blanca.jpg",
+        img: "../imga/mk blanca.jpg",
         descripcion: `Polera Michael Kors confeccionada en algodón premium con corte regular fit.
                      Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                      Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -35,7 +35,7 @@ const productos = {
     bossnegra: {
         nombre: "Polera Boss negra",
         precio: 15000,
-        img: "/imga/boss.jpg",
+        img: "../imga/boss.jpg",
         descripcion: `Polera Boss negra confeccionada en algodón premium con corte regular fit.
                      Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                      Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -44,7 +44,7 @@ const productos = {
     mkne: {
         nombre: "Polera Michael Kors negra",
         precio: 15000,
-        img: "/imga/mk ne.jpg",
+        img: "../imga/mk ne.jpg",
         descripcion: `Polera Michael Kors negra confeccionada en algodón premium con corte regular fit.
                      Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                      Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -53,7 +53,7 @@ const productos = {
     mosne: {
         nombre: "Polera Moschino negra",
         precio: 15000,
-        img: "/imga/mos ne.jpg",
+        img: "../imga/mos ne.jpg",
         descripcion: `Polera Moschino negra confeccionada en algodón premium con corte regular fit.
                      Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                      Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -62,7 +62,7 @@ const productos = {
     tommyne: {
         nombre: "Polera Tommy negra",
         precio: 15000,
-        img: "/imga/tommy ne.jpg",
+        img: "../imga/tommy ne.jpg",
         descripcion: `Polera Tommy negra confeccionada en algodón premium con corte regular fit.
                      Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                      Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -71,7 +71,7 @@ const productos = {
     tommybl: {
         nombre: "Polera Tommy blanca",
         precio: 15000,
-        img: "/imga/tomy blanca.jpg",
+        img: "../imga/tomy blanca.jpg",
         descripcion: `Polera Tommy blanca confeccionada en algodón premium con corte regular fit.
                      Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                      Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -80,7 +80,7 @@ const productos = {
     aen: {
         nombre: "Polera Emporio Armani negra",
         precio: 15000,
-        img: "/imga/aen.jpg",
+        img: "../imga/aen.jpg",
         descripcion: `Polera Emporio Armani negra confeccionada en algodón premium con corte regular fit.
                      Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                      Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,

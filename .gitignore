@@ -30,3 +30,5 @@ build/
 
 # Archivos de configuración de VS Code
 *.code-workspace
+
+data/

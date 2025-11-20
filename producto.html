@@ -22,25 +22,25 @@
 
         <section class="anuncio">
             <div class="anuncios">
-                <img src="/othan-store-modificado/imga/drip2.jpg" data-id="drip" />
-                <img src="/othan-store-modificado/imga/boss.jpg" data-id="bossnegra" />
-                <img src="/othan-store-modificado/imga/mk blanca.jpg" data-id="mkblanca" />
-                <img src="/othan-store-modificado/imga/tommy ne.jpg" data-id="tommyne" />
-                <img src="/othan-store-modificado/imga/mk ne.jpg" data-id="mkne" />
-                <img src="/othan-store-modificado/imga/tomy blanca.jpg" data-id="tommybl" />
-                <img src="/othan-store-modificado/imga/mos ne.jpg" data-id="mosne" />
-                <img src="/othan-store-modificado/imga/aen.jpg" data-id="aen" />
+                <img src="imga/drip2.jpg" data-id="drip" />
+                <img src="imga/boss.jpg" data-id="bossnegra" />
+                <img src="imga/mk blanca.jpg" data-id="mkblanca" />
+                <img src="imga/tommy ne.jpg" data-id="tommyne" />
+                <img src="imga/mk ne.jpg" data-id="mkne" />
+                <img src="imga/tomy blanca.jpg" data-id="tommybl" />
+                <img src="imga/mos ne.jpg" data-id="mosne" />
+                <img src="imga/aen.jpg" data-id="aen" />
             </div>
             <!-- Se duplican para que el loop sea fluido -->
             <div class="anuncios">
-                <img src="/othan-store-modificado/imga/" data-id="drip" />
-                <img src="/othan-store-modificado/imga/boss.jpg" data-id="bossnegra" />
-                <img src="/othan-store-modificado/imga/mk blanca.jpg" data-id="mkblanca" />
-                <img src="/othan-store-modificado/imga/tommy ne.jpg" data-id="tommyne" />
-                <img src="/othan-store-modificado/imga/mk ne.jpg" data-id="mkne" />
-                <img src="/othan-store-modificado/imga/tomy blanca.jpg" data-id="tommybl" />
-                <img src="/othan-store-modificado/imga/mos ne.jpg" data-id="mosne" />
-                <img src="/othan-store-modificado/imga/aen.jpg" data-id="aen" />
+                <img src="imga/" data-id="drip" />
+                <img src="imga/boss.jpg" data-id="bossnegra" />
+                <img src="imga/mk blanca.jpg" data-id="mkblanca" />
+                <img src="imga/tommy ne.jpg" data-id="tommyne" />
+                <img src="imga/mk ne.jpg" data-id="mkne" />
+                <img src="imga/tomy blanca.jpg" data-id="tommybl" />
+                <img src="imga/mos ne.jpg" data-id="mosne" />
+                <img src="imga/aen.jpg" data-id="aen" />
             </div>
         </section>
 
@@ -48,7 +48,7 @@
             document.querySelectorAll(".anuncios img").forEach((img) => {
                 img.addEventListener("click", () => {
                     localStorage.setItem("productoId", img.dataset.id);
-                    window.location.href = "/poleras/html/poleras.html";
+                    window.location.href = "poleras/poleras.html";
                 });
             });
         </script>
@@ -61,13 +61,13 @@
                         href="poleras/poleras.html"
                         onclick="localStorage.setItem('productoId','drip')"
                     >
-                        <img src="/othan-store-modificado/imga/drip.webp" alt="Conjunto Drip"
+                        <img src="imga/drip.webp" alt="Conjunto Drip"
                     /></a>
                     <h3>Conjunto Drip</h3>
                     <p>$35.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Conjunto Drip', 35000, '/othan-store-modificado/imga/drip.webp')"
+                        onclick="agregarCarrito('Conjunto Drip', 35000, 'imga/drip.webp')"
                     >
                         Agregar al carrito
                     </button>
@@ -79,14 +79,14 @@
                         onclick="localStorage.setItem('productoId','basicbla')"
                     >
                         <img
-                            src="/othan-store-modificado/imga/basicbla.jpg"
+                            src="imga/basicbla.jpg"
                             alt="Polera blanca básica"
                     /></a>
                     <h3>Polera blanca básica</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera blanca básica', 15000, '/othan-store-modificado/imga/basicbla.jpg')"
+                        onclick="agregarCarrito('Polera blanca básica', 15000, 'imga/basicbla.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -98,14 +98,14 @@
                         onclick="localStorage.setItem('productoId','mkblanca')"
                     >
                         <img
-                            src="/othan-store-modificado/imga/mk blanca.jpg"
+                            src="imga/mk blanca.jpg"
                             alt="Polera Michael Kors blanca"
                     /></a>
                     <h3>Polera Michael Kors blanca</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Michael Kors blanca', 15000, '/othan-store-modificado/imga/mk blanca.jpg')"
+                        onclick="agregarCarrito('Polera Michael Kors blanca', 15000, 'imga/mk blanca.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -116,13 +116,13 @@
                         href="poleras/poleras.html"
                         onclick="localStorage.setItem('productoId','bossnegra')"
                     >
-                        <img src="/othan-store-modificado/imga/boss.jpg" alt="Polera Boss negra"
+                        <img src="imga/boss.jpg" alt="Polera Boss negra"
                     /></a>
                     <h3>Polera Boss negra</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Boss negra', 15000, '/othan-store-modificado/imga/boss.jpg')"
+                        onclick="agregarCarrito('Polera Boss negra', 15000, 'imga/boss.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -134,14 +134,14 @@
                         onclick="localStorage.setItem('productoId','mkne')"
                     >
                         <img
-                            src="/othan-store-modificado/imga/mk ne.jpg"
+                            src="imga/mk ne.jpg"
                             alt="Polera Michael Kors negra"
                     /></a>
                     <h3>Polera Michael Kors negra</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Michael Kors negra', 15000, '/othan-store-modificado/imga/mk ne.jpg')"
+                        onclick="agregarCarrito('Polera Michael Kors negra', 15000, 'imga/mk ne.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -152,13 +152,13 @@
                         href="poleras/poleras.html"
                         onclick="localStorage.setItem('productoId','mosne')"
                     >
-                        <img src="/othan-store-modificado/imga/mos ne.jpg" alt="Polera Moschino negra"
+                        <img src="imga/mos ne.jpg" alt="Polera Moschino negra"
                     /></a>
                     <h3>Polera Moschino negra</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Moschino negra', 15000, '/othan-store-modificado/imga/mos ne.jpg')"
+                        onclick="agregarCarrito('Polera Moschino negra', 15000, 'imga/mos ne.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -169,13 +169,13 @@
                         href="poleras/poleras.html"
                         onclick="localStorage.setItem('productoId','tommyne')"
                     >
-                        <img src="/othan-store-modificado/imga/tommy ne.jpg" alt="Polera Tommy negra"
+                        <img src="imga/tommy ne.jpg" alt="Polera Tommy negra"
                     /></a>
                     <h3>Polera Tommy negra</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Tommy negra', 15000, '/othan-store-modificado/imga/tommy ne.jpg')"
+                        onclick="agregarCarrito('Polera Tommy negra', 15000, 'imga/tommy ne.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -187,14 +187,14 @@
                         onclick="localStorage.setItem('productoId','tommybl')"
                     >
                         <img
-                            src="/othan-store-modificado/imga/tomy blanca.jpg"
+                            src="imga/tomy blanca.jpg"
                             alt="Polera Tommy blanca"
                     /></a>
                     <h3>Polera Tommy blanca</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Tommy blanca', 15000, '/othan-store-modificado/imga/tomy blanca.jpg')"
+                        onclick="agregarCarrito('Polera Tommy blanca', 15000, 'imga/tomy blanca.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -206,14 +206,14 @@
                         onclick="localStorage.setItem('productoId','aen')"
                     >
                         <img
-                            src="/othan-store-modificado/imga/aen.jpg"
+                            src="imga/aen.jpg"
                             alt="Polera Emporio Armani negra"
                     /></a>
                     <h3>Polera Emporio Armani negra</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Emporio Armani negra', 15000, '/othan-store-modificado/imga/aen.jpg')"
+                        onclick="agregarCarrito('Polera Emporio Armani negra', 15000, 'imga/aen.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -235,7 +235,7 @@
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Emporio Armani azul', 15000, '/othan-store-modificado/imga/polerontiger.jpg')"
+                        onclick="agregarCarrito('Polera Emporio Armani azul', 15000, 'imga/polerontiger.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -245,13 +245,13 @@
                         href="poleras/polerones.html"
                         onclick="localStorage.setItem('productoId','poleron2')"
                     >
-                        <img src="/othan-store-modificado/imga/poleronazul.jpg" alt="Polerón 2"
+                        <img src="imga/poleronazul.jpg" alt="Polerón 2"
                     /></a>
                     <h3>Polera Emporio Armani azul</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Emporio Armani azul', 15000, '/othan-store-modificado/imga/poleronazul.jpg')"
+                        onclick="agregarCarrito('Polera Emporio Armani azul', 15000, 'imga/poleronazul.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -261,13 +261,13 @@
                         href="poleras/polerones.html"
                         onclick="localStorage.setItem('productoId','poleron3')"
                     >
-                        <img src="/othan-store-modificado/imga/poleronnegro.jpg" alt="Polerón 3"
+                        <img src="imga/poleronnegro.jpg" alt="Polerón 3"
                     /></a>
                     <h3>Polera Emporio Armani negra</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Emporio Armani negra', 15000, '/othan-store-modificado/imga/poleronnegro.jpg')"
+                        onclick="agregarCarrito('Polera Emporio Armani negra', 15000, 'imga/poleronnegro.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -277,13 +277,13 @@
                         href="poleras/polerones.html"
                         onclick="localStorage.setItem('productoId','poleron4')"
                     >
-                        <img src="/othan-store-modificado/imga/poleron kappa.jpg" alt="Polerón 4"
+                        <img src="imga/poleron kappa.jpg" alt="Polerón 4"
                     /></a>
                     <h3>Polera Emporio Armani celeste</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Emporio Armani celeste', 15000, '/othan-store-modificado/imga/poleron kappa.jpg')"
+                        onclick="agregarCarrito('Polera Emporio Armani celeste', 15000, 'imga/poleron kappa.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -298,13 +298,13 @@
                         href="poleras/buzos.html"
                         onclick="localStorage.setItem('productoId','buzo1')"
                     >
-                        <img src="/othan-store-modificado/imga/BUZO2.jpg" alt="buzo"
+                        <img src="imga/BUZO2.jpg" alt="buzo"
                     /></a>
                     <h3>BUZO NIKE NEGRO</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('buzo nike negro', 15000, '/othan-store-modificado/imga/BUZO2.jpg')"
+                        onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -315,13 +315,13 @@
                         href="poleras/buzos.html"
                         onclick="localStorage.setItem('productoId','buzo2')"
                     >
-                        <img src="/othan-store-modificado/imga/BUZO2.jpg" alt="buzo"
+                        <img src="imga/BUZO2.jpg" alt="buzo"
                     /></a>
                     <h3>BUZO NIKE NEGRO</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('buzo nike negro', 15000, '/othan-store-modificado/imga/BUZO2.jpg')"
+                        onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -332,13 +332,13 @@
                         href="poleras/buzos.html"
                         onclick="localStorage.setItem('productoId','buzo3')"
                     >
-                        <img src="/othan-store-modificado/imga/BUZO2.jpg" alt="buzo"
+                        <img src="imga/BUZO2.jpg" alt="buzo"
                     /></a>
                     <h3>BUZO NIKE NEGRO</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('buzo nike negro', 15000, '/othan-store-modificado/imga/BUZO2.jpg')"
+                        onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -349,13 +349,13 @@
                         href="poleras/buzos.html"
                         onclick="localStorage.setItem('productoId','buzo4')"
                     >
-                        <img src="/othan-store-modificado/imga/BUZO2.jpg" alt="buzo"
+                        <img src="imga/BUZO2.jpg" alt="buzo"
                     /></a>
                     <h3>BUZO NIKE NEGRO</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('buzo nike negro', 15000, '/othan-store-modificado/imga/BUZO2.jpg')"
+                        onclick="agregarCarrito('buzo nike negro', 15000, 'imga/BUZO2.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -369,13 +369,13 @@
                         href="poleras/conjuntos.html"
                         onclick="localStorage.setItem('productoId','conjunto1')"
                     >
-                        <img src="/othan-store-modificado/imga/drip.webp" alt="chaqueta"
+                        <img src="imga/drip.webp" alt="chaqueta"
                     /></a>
                     <h3>Polera Emporio Armani negra</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('Polera Emporio Armani negra', 15000, '/othan-store-modificado/imga/drip.webp')"
+                        onclick="agregarCarrito('Polera Emporio Armani negra', 15000, 'imga/drip.webp')"
                     >
                         Agregar al carrito
                     </button>
@@ -385,13 +385,13 @@
                         href="poleras/conjuntos.html"
                         onclick="localStorage.setItem('productoId','conjunto2')"
                     >
-                        <img src="/othan-store-modificado/imga/niketech.jpg" alt="chaqueta"
+                        <img src="imga/niketech.jpg" alt="chaqueta"
                     /></a>
                     <h3>Conjunto Nike tech gris</h3>
                     <p>$50.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('nike tech gris', 15000, '/othan-store-modificado/imga/drip.webp')"
+                        onclick="agregarCarrito('nike tech gris', 15000, 'imga/drip.webp')"
                     >
                         Agregar al carrito
                     </button>
@@ -401,13 +401,13 @@
                         href="poleras/conjuntos.html"
                         onclick="localStorage.setItem('productoId','conjunto3')"
                     >
-                        <img src="/othan-store-modificado/imga/niketechnegro.jpg" alt="chaqueta"
+                        <img src="imga/niketechnegro.jpg" alt="chaqueta"
                     /></a>
                     <h3>Conjunto Nike tech negra</h3>
                     <p>$15.000</p>
                     <p>Tallas disponibles: S, M, L</p>
                     <button
-                        onclick="agregarCarrito('nike tech negro', 15000, '/othan-store-modificado/imga/drip.webp')"
+                        onclick="agregarCarrito('nike tech negro', 15000, 'imga/drip.webp')"
                     >
                         Agregar al carrito
                     </button>
@@ -422,13 +422,13 @@
                         href="poleras/zapatillas.html"
                         onclick="localStorage.setItem('productoId','tillas1')"
                     >
-                        <img src="/othan-store-modificado/imga/jordan1low.jpg" alt="tillas"
+                        <img src="imga/jordan1low.jpg" alt="tillas"
                     /></a>
                     <h3>Jordan 1 low</h3>
                     <p>$65.000</p>
                     <p>Tallas disponibles: 40,41,42,41,43,44</p>
                     <button
-                        onclick="agregarCarrito('zapatilla jordan 1', 65000, '/othan-store-modificado/imga/jordan1low.jpg')"
+                        onclick="agregarCarrito('zapatilla jordan 1', 65000, 'imga/jordan1low.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -439,13 +439,13 @@
                         href="poleras/zapatillas.html"
                         onclick="localStorage.setItem('productoId','tillas2')"
                     >
-                        <img src="/othan-store-modificado/imga/LV.jpg" alt="tillas"
+                        <img src="imga/LV.jpg" alt="tillas"
                     /></a>
                     <h3>ZAPATILLA LV</h3>
                     <p>$65.000</p>
                     <p>Tallas disponibles: 40,41,42,41,43,44</p>
                     <button
-                        onclick="agregarCarrito('ZAPATILLA LV', 65000, '/othan-store-modificado/imga/LV.jpg')"
+                        onclick="agregarCarrito('ZAPATILLA LV', 65000, 'imga/LV.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -456,13 +456,13 @@
                         href="poleras/zapatillas.html"
                         onclick="localStorage.setItem('productoId','tillas3')"
                     >
-                        <img src="/othan-store-modificado/imga/r4thunder.jpg" alt="tillas"
+                        <img src="imga/r4thunder.jpg" alt="tillas"
                     /></a>
                     <h3>Jordan R4 red thunder</h3>
                     <p>$65.000</p>
                     <p>Tallas disponibles: 40,41,42,41,43,44</p>
                     <button
-                        onclick="agregarCarrito('Jordan R4 red thunder', 65000, '/othan-store-modificado/imga/r4thunder.jpg' )"
+                        onclick="agregarCarrito('Jordan R4 red thunder', 65000, 'imga/r4thunder.jpg' )"
                     >
                         Agregar al carrito
                     </button>
@@ -473,13 +473,13 @@
                         href="poleras/zapatillas.html"
                         onclick="localStorage.setItem('productoId','tillas4')"
                     >
-                        <img src="/othan-store-modificado/imga/R4black.jpg" alt="tillas"
+                        <img src="imga/R4black.jpg" alt="tillas"
                     /></a>
                     <h3>Jordan R4 black cat</h3>
                     <p>$65.000</p>
                     <p>Tallas disponibles: 40,41,42,41,43,44</p>
                     <button
-                        onclick="agregarCarrito('Jordan R4 black cat', 65000, '/othan-store-modificado/imga/R4black.jpg')"
+                        onclick="agregarCarrito('Jordan R4 black cat', 65000, 'imga/R4black.jpg')"
                     >
                         Agregar al carrito
                     </button>
@@ -508,12 +508,12 @@
             });
         </script>
 
-         <script src="/mapa.js"></script>
+        <script src="mapa.js"></script>
         <script
             async
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"
         ></script>
-        <script src="/carrito.js"></script>
+        <script src="carrito.js"></script>
     </body>
 </html>
 
