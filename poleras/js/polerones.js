@@ -1,8 +1,3 @@
-//esto da el mensaje de agregado al carrito de compras
-function agregarCarrito(nombre, precio) {
-    alert(nombre + " agregada al carrito por $" + precio.toLocaleString());
-}
-
 const productos = {
     poleron1: {
         nombre: "Polera Emporio Armani azul",

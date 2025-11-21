@@ -1,8 +1,3 @@
-//esto da el mensaje de agregado al carrito de compras
-function agregarCarrito(nombre, precio) {
-    alert(nombre + " agregada al carrito por $" + precio.toLocaleString());
-}
-
 const productos = {
     drip: {
         nombre: "Conjunto Drip",
@@ -44,7 +39,7 @@ const productos = {
     mkne: {
         nombre: "Polera Michael Kors negra",
         precio: 15000,
-        img: "../imga/mk ne.jpg",
+        img: "../../imga/mk ne.jpg",
         descripcion: `Polera Michael Kors negra confeccionada en algodón premium con corte regular fit.
                      Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                      Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,

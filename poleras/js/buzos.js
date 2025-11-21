@@ -1,13 +1,9 @@
-//esto da el mensaje de agregado al carrito de compras
-function agregarCarrito(nombre, precio) {
-    alert(nombre + " agregada al carrito por $" + precio.toLocaleString());
-}
-
 const productos = {
     buzo1: {
         nombre: "Buzo nike negro",
         precio: 15000,
         img: "../../imga/buzo.jpg",
+        imgcarrito: "imga/buzo.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -17,6 +13,7 @@ const productos = {
         nombre: "Buzo nike negro",
         precio: 15000,
         img: "../../imga/buzo.jpg",
+        imgcarrito: "imga/buzo.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -26,6 +23,7 @@ const productos = {
         nombre: "Buzo nike negro",
         precio: 15000,
         img: "../../imga/buzo.jpg",
+        imgcarrito: "imga/buzo.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -35,6 +33,7 @@ const productos = {
         nombre: "Buzo nike negro",
         precio: 15000,
         img: "../../imga/buzo.jpg",
+        imgcarrito: "imga/buzo.jpg",
         descripcion: `Buzo nike negro confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -63,9 +62,7 @@ if (producto) {
                 </div>
             </div>
 
-            <button onclick="agregarCarrito('${producto.nombre}', ${
-        producto.precio
-    })">Agregar al carrito</button>
+            <button onclick="agregarCarrito('${producto.nombre}', ${producto.precio},${producto.imgcarrito} )">Agregar al carrito</button>
 
             <!-- SECCIÓN ENVÍO Y OPCIONES -->
             <div class="envio-info">

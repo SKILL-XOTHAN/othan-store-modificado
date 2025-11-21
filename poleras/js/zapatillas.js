@@ -1,8 +1,3 @@
-//esto da el mensaje de agregado al carrito de compras
-function agregarCarrito(nombre, precio) {
-    alert(nombre + " agregada al carrito por $" + precio.toLocaleString());
-}
-
 const productos = {
     tillas1: {
         nombre: "zapatilla jordan 1 ",
