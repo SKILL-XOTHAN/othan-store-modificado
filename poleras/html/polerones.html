@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Detalle Producto - Othan Store</title>
-        <link rel="stylesheet" href="detalle-productos.css" />
-        <link rel="stylesheet" href="../inicio.css" />
-    </head>
-    <body>
-        <!-- HEADER -->
-        <div id="header"></div>
 
-        <!-- NAV -->
-        <nav class="filtros">
-            <a href="../producto.html#polera-1"><button>Poleras</button></a>
-            <a href="../producto.html#chaquetas"><button>Chaquetas</button></a>
-            <a href="../producto.html#buzos"><button>Buzos</button></a>
-            <a href="../producto.html#conjunto"><button>Conjuntos</button></a>
-            <a href="../producto.html#zapatilla"><button>Zapatillas</button></a>
-        </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle Producto - Othan Store</title>
+    <link rel="stylesheet" href="../css/detalle-productos.css" />
+    <link rel="stylesheet" href="../../inicio.css" />
+</head>
 
-        <section class="producto-detalle" id="detalle"></section>
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
 
-        <div class="volver">
-            <a href="../producto.html">← Volver a la tienda</a>
-        </div>
+    <!-- NAV -->
+    <nav class="filtros">
+        <a href="../../producto.html#polera-1"><button>Poleras</button></a>
+        <a href="../../producto.html#chaquetas"><button>Chaquetas</button></a>
+        <a href="../../producto.html#buzos"><button>Buzos</button></a>
+        <a href="../../producto.html#conjunto"><button>Conjuntos</button></a>
+        <a href="../../producto.html#zapatilla"><button>Zapatillas</button></a>
+    </nav>
 
-        <script src="polerones.js"></script>
-        <script src="../carrito.js"></script>
+    <section class="producto-detalle" id="detalle"></section>
 
-        <div id="footer"></div>
-        <script>
-            ["header", "footer"].forEach((id) =>
-                fetch(`../${id}.html`)
-                    .then((r) => r.text())
-                    .then(
-                        (html) => (document.getElementById(id).innerHTML = html)
-                    )
-            );
-        </script>
-    </body>
+    <div class="volver">
+        <a href="../../producto.html">← Volver a la tienda</a>
+    </div>
+
+    <script src="../js/polerones.js"></script>
+    <script src="../../carrito.js"></script>
+
+    <div id="footer"></div>
+    <script>
+        ["header", "footer"].forEach((id) =>
+            fetch(`../../${id}.html`)
+            .then((r) => r.text())
+            .then(
+                (html) => (document.getElementById(id).innerHTML = html)
+            )
+        );
+    </script>
+</body>
+
 </html>

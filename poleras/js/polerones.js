@@ -7,7 +7,7 @@ const productos = {
     poleron1: {
         nombre: "Polera Emporio Armani azul",
         precio: 15000,
-        img: "../imga/polerontiger.jpg",
+        img: "../../imga/polerontiger.jpg",
         descripcion: `Polera Emporio Armani azul confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -16,7 +16,7 @@ const productos = {
     poleron2: {
         nombre: "Polera Emporio Armani azul",
         precio: 15000,
-        img: "../imga/poleronazul.jpg",
+        img: "../../imga/poleronazul.jpg",
         descripcion: `Polera Emporio Armani azul confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -25,7 +25,7 @@ const productos = {
     poleron3: {
         nombre: "Polera Emporio Armani negra",
         precio: 15000,
-        img: "../imga/poleronnegro.jpg",
+        img: "../../imga/poleronnegro.jpg",
         descripcion: `Polera Emporio Armani negra confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
@@ -34,7 +34,7 @@ const productos = {
     poleron4: {
         nombre: "Polera Emporio Armani celeste",
         precio: 15000,
-        img: "../imga/poleron kappa.jpg",
+        img: "../../imga/poleron kappa.jpg",
         descripcion: `Polera Emporio Armani celeste confeccionado en algodón premium con corte regular fit.
                       Diseño elegante con logo minimalista, ideal para combinar con jeans o pantalones casuales.
                       Perfecta para quienes buscan comodidad y estilo con un toque de lujo.`,
