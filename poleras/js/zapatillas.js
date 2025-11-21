@@ -47,6 +47,7 @@ const producto = productos[id];
 const detalle = document.getElementById("detalle");
 
 if (producto) {
+    const imagenCarrito = producto.img.replace(/^(\.\.\/)+/, '');
     detalle.innerHTML = `
         <div class="imagen-producto">
             <img src="${producto.img}" alt="${producto.nombre}">
@@ -62,9 +63,8 @@ if (producto) {
                 </div>
             </div>
 
-            <button onclick="agregarCarrito('${producto.nombre}', ${
-        producto.precio
-    })">Agregar al carrito</button>
+                <button onclick="agregarCarrito('${producto.nombre}', ${
+        producto.precio},'${imagenCarrito}')">Agregar al carrito</button>
 
             <!-- SECCIÓN ENVÍO Y OPCIONES -->
             <div class="envio-info">
