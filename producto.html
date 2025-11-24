@@ -343,13 +343,13 @@
             </section>
         </main>
 
-        <script src="carrito.js"></script>
+        <script src="public/js/carrito.js"></script>
 
         <script src="reel.js" defer></script>
 
         <div id="footer"></div>
         <script>
-            fetch("footer.html")
+            fetch("public/html/footer.html")
                 .then(Response => Response.text())
                 .then(data => {
                     document.getElementById("footer").innerHTML = data;
@@ -357,16 +357,16 @@
         </script>
 
         <script>
-            fetch("header.html")
+            fetch("public/html/header.html")
                 .then(Response => Response.text())
                 .then(data => {
                     document.getElementById("header").innerHTML = data;
                 });
         </script>
 
-        <script src="mapa.js"></script>
+        <script src="public/js/mapa.js"></script>
         <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-        <script src="carrito.js"></script>
+        <script src="public/js/carrito.js"></script>
     </body>
 
 
