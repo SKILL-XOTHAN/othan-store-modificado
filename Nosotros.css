@@ -1,0 +1,225 @@
+/* ====== ESTILOS GENERALES ====== */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f8f9fa;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====== HEADER ====== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #1c1c1c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar .search-btn {
+    background: goldenrod;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.search-bar .search-btn:hover {
+    background: #ffd700;
+}
+
+/* Menú */
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    background-color: goldenrod;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+
+/* ====== NAV FILTROS ====== */
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.filtros button {
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filtros button:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+}
+
+main {
+    flex: 1;
+    padding-top: 80px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* el contenido arriba */
+}
+main h2 {
+    font-size: 29px;
+    scroll-margin-top: 100px;
+}
+p {
+    text-align: none;
+    padding: 10px;
+    font-size: 18px;
+}
+#quienes_somos {
+    scroll-margin-top: 80px;
+    text-align: center;
+}
+#mision {
+    text-align: center;
+}
+#vision {
+    text-align: center;
+}
+
+/* ======Mapa======*/
+.ubicacion {
+    text-align: center;
+    color: #ffcc00;
+    padding: 40px 20px;
+}
+
+.ubicacion h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#map {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background: #000;
+    color: #aaa;
+    margin-top: 40px;
+    border-top: 2px solid goldenrod;
+}
+footer p {
+    margin: 25px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+footer h2 {
+    font-size: 25px;
+    color: goldenrod;
+}
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+.a_nosotros {
+    display: block;
+    margin: 10px 50px 10px 100px;
+}
+.a_contactos {
+    display: block;
+    margin: 10px 50px 10px 100px;
+}
+.a_QA {
+    display: block;
+    margin: 10px 50px 10px 100px;
+}
+.pagos {
+    margin: 10px 50px 10px 100px;
+}
+.banco_estado {
+    width: 125px;
+    height: 65px;
+    border-radius: 12px;
+}
