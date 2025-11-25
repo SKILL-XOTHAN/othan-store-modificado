@@ -1,12 +1,13 @@
 /* Establece la imagen de fondo para el login */
 
 .gradient-custom {
-    background-image: url("imga/Negro Gris Oscuro Degradado Color y Estilo Fondo de Video.png");
+    background-image: url("../../imga/Negro Gris Oscuro Degradado Color y Estilo Fondo de Video.png");
     /* Cambia la ruta a tu imagen */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
+
 
 /* Si prefieres darle un color oscuro con overlay, usa este estilo adicional */
 

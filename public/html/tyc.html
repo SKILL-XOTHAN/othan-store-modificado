@@ -10,60 +10,7 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="header_container">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="../../producto.html">
-                    <img src="../../imga/M.png" alt="Logo de Othan Store" />
-                </a>
-            </div>
 
-            <!-- Barra de búsqueda -->
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar productos..." />
-                <button class="search-btn">🔍</button>
-            </div>
-
-            <!-- Menú -->
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="../../producto.html">Inicio</a></li>
-                        <li>
-                            <a href="login.html" class="boton">Registrarte</a
-                                >
-                            </li>
-                            <li>
-                                <a href="login.html" class="boton"
-                                    >Iniciar sesión</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="carrito.html"
-                                    class="boton carrito-link"
-                                >
-                                    🛒 Carrito (<span id="contador-carrito"
-                                        >0</span
-                                    >)
-                                </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- NAV -->
-    <nav class="filtros">
-        <a href="../../producto.html#polera-1"><button>Poleras</button></a>
-        <a href="../../producto.html#chaquetas"><button>Chaquetas</button></a>
-        <a href="../../producto.html#buzos"><button>Buzos</button></a>
-        <a href="../../producto.html#conjunto"><button>Conjuntos</button></a>
-        <a href="../../producto.html#zapatilla"><button>Zapatillas</button></a>
-    </nav>
 
     <div class="terms-container">
         <!-- Menú lateral -->
@@ -395,44 +342,19 @@
             </section>
         </div>
 
-        <footer>
-            <div class="container_footer">
-                <div class="sobre_nosotros">
-                    <h2 class="a_nosotros" id="nosotros">Nosotros</h2>
-                    <a class="a_nosotros" href="Nosotros.html#quienes_somos"
-                        >Quienes somos</a
-                    >
-                    <a class="a_nosotros" href="Nosotros.html#mision"
-                        >Nuestra mision</a
-                    >
-                    <a class="a_nosotros" href="Nosotros.html#vision"
-                        >Nuestra vision</a
-                    >
-                </div>
 
-                <div class="conctactos">
-                    <h2 class="a_contactos">Contactos</h2>
-                    <a class="a_contactos" href="">Instagram</a>
-                    <a class="a_contactos" href="">Correo</a>
-    </div>
+            <script>
+        ["header", "footer"].forEach((id) =>
+            fetch(`${id}.html`)
+            .then((r) => r.text())
+            .then(
+                (html) => (document.getElementById(id).innerHTML = html)
+            )
+        );
+    </script>
 
-    <div class="QA">
-        <h2 class="a_QA">Otros</h2>
-        <a class="a_QA" href="preguntas-frecuentes.html">Preguntas Frecuentes</a
-                    >
-                    <a class="a_QA" href="pedidos.html">
-                        Revisa el estado de tu pedido
-                    </a>
-        <a class="a_QA" href="tyc.html">Términos y condiciones</a>
-    </div>
 
-    <div class="Pagos">
-        <h2 class="pagos">Métodos de Pago</h2>
-        <img class="banco_estado img-fluid" src="../../imga/bancoestado.png" alt="Banco estado" />
-    </div>
-    </div>
-    <p>Hecho por Othan - Todos los derechos reservados</p>
-    </footer>
+
 </body>
 
 </html>

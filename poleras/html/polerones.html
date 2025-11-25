@@ -34,7 +34,7 @@
     <div id="footer"></div>
     <script>
         ["header", "footer"].forEach((id) =>
-            fetch(`../../public/html${id}.html`)
+            fetch(`../../public/html/${id}.html`)
             .then((r) => r.text())
             .then(
                 (html) => (document.getElementById(id).innerHTML = html)
