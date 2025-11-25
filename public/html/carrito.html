@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Carrito de Compras - Othan Store</title>
-        <link rel="stylesheet" href="inicio.css" />
-        <link rel="stylesheet" href="carrito.css" />
-    </head>
 
-    <body>
-        <!-- HEADER -->
-        <div id="header"></div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras - Othan Store</title>
+    <link rel="stylesheet" href="/public/css/inicio.css" />
+    <link rel="stylesheet" href="/public/css/carrito.css" />
+</head>
 
-        <!-- CONTENIDO DEL CARRITO -->
-        <main class="carrito-main">
-            <div class="carrito-container">
-                <h1 class="carrito-titulo">Mi Carrito de Compras</h1>
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
 
-                <div class="carrito-contenido">
-                    <!-- Lista de productos -->
-                    <div class="carrito-productos">
-                        <div id="productos-lista">
-                            <!-- Los productos se cargarán aquí dinámicamente -->
-                        </div>
+    <!-- CONTENIDO DEL CARRITO -->
+    <main class="carrito-main">
+        <div class="carrito-container">
+            <h1 class="carrito-titulo">Mi Carrito de Compras</h1>
 
-                        <div id="carrito-vacio" class="carrito-vacio">
-                            <div class="vacio-icono">🛒</div>
-                            <h2>Tu carrito está vacío</h2>
-                            <p>Agrega productos para comenzar tu compra</p>
-                            <a href="producto.html" class="btn-seguir-comprando"
-                                >Ir a comprar</a
+            <div class="carrito-contenido">
+                <!-- Lista de productos -->
+                <div class="carrito-productos">
+                    <div id="productos-lista">
+                        <!-- Los productos se cargarán aquí dinámicamente -->
+                    </div>
+
+                    <div id="carrito-vacio" class="carrito-vacio">
+                        <div class="vacio-icono">🛒</div>
+                        <h2>Tu carrito está vacío</h2>
+                        <p>Agrega productos para comenzar tu compra</p>
+                        <a href="../../producto.html" class="btn-seguir-comprando">Ir a comprar</a
                             >
                         </div>
                     </div>
@@ -57,22 +57,14 @@
                             Proceder al Pago
                         </button>
 
-                        <a href="producto.html" class="btn-continuar">
+                        <a href="../../producto.html" class="btn-continuar">
                             Continuar Comprando
                         </a>
 
                         <div class="metodos-pago">
                             <h3>Métodos de Pago</h3>
-                            <a
-                                href="https://www.bancoestado.cl/content/bancoestado-public/cl/es/home/home.html#/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    src="imga/bancoestado.png"
-                                    alt="Banco Estado"
-                                    class="banco_estado img-fluid"
-                                />
+                            <a href="https://www.bancoestado.cl/content/bancoestado-public/cl/es/home/home.html#/" target="_blank" rel="noopener noreferrer">
+                                <img src="../../imga/bancoestado.png" alt="Banco Estado" class="banco_estado img-fluid" />
                             </a>
                         </div>
                         <div class="info-empresa">
@@ -86,21 +78,22 @@
                     </div>
                 </div>
             </div>
-        </main>
+    </main>
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
 
-        <div id="footer"></div>
-        <script>
-            ["header", "footer"].forEach((id) =>
-                fetch(`${id}.html`)
-                    .then((r) => r.text())
-                    .then(
-                        (html) => (document.getElementById(id).innerHTML = html)
-                    )
-            );
-        </script>
-        <!-- SCRIPT DEL CARRITO -->
-        <script src="carrito.js"></script>
-    </body>
+    <div id="footer"></div>
+    <script>
+        ["header", "footer"].forEach((id) =>
+            fetch(`../../public/html${id}.html`)
+            .then((r) => r.text())
+            .then(
+                (html) => (document.getElementById(id).innerHTML = html)
+            )
+        );
+    </script>
+    <!-- SCRIPT DEL CARRITO -->
+    <script src="/public/js/carrito.js"></script>
+</body>
+
 </html>

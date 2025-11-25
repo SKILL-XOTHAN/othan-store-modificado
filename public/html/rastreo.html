@@ -10,8 +10,8 @@
 
     <!-- Archivo CSS personalizado -->
 
-    <link rel="stylesheet" href="rastreo.css" />
-    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="/public/css/rastreo.css" />
+    <link rel="stylesheet" href="/public/css/inicio.css">
 </head>
 <div id="header"></div>
 <!-- Fondo verde general -->
@@ -118,7 +118,7 @@
     <div id="footer"></div>
     <script>
         ["header", "footer"].forEach((id) =>
-            fetch(`${id}.html`)
+            fetch(`../../public/html${id}.html`)
             .then((r) => r.text())
             .then((html) => (document.getElementById(id).innerHTML = html))
         );
@@ -137,7 +137,7 @@
     </script>
 
     <!-- Archivo JS principal (control de progreso y comunicación con Node) -->
-    <script src="rastreo.js"></script>
+    <script src="/public/js/rastreo.js"></script>
 </body>
 
 </html>
