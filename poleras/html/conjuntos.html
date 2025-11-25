@@ -29,12 +29,12 @@
     </div>
 
     <script src="../js/conjuntos.js"></script>
-    <script src="../../carrito.js"></script>
+    <script src="../../public/js/carrito.js"></script>
 
     <div id="footer"></div>
     <script>
         ["header", "footer"].forEach((id) =>
-            fetch(`../../${id}.html`)
+            fetch(`../../public/html${id}.html`)
             .then((r) => r.text())
             .then(
                 (html) => (document.getElementById(id).innerHTML = html)
