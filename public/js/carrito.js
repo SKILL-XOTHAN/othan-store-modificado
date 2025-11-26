@@ -43,7 +43,7 @@ function renderizarCarrito() {
 
     productosLista.innerHTML = carrito.map((item, index) => `
         <div class="producto-item" data-index="${index}">
-            <img src="${item.imagen || 'imga/placeholder.jpg'}" alt="${item.nombre}" class="producto-imagen">
+            <img src="${item.imagen || '../../imga/placeholder.jpg'}" alt="${item.nombre}" class="producto-imagen">
             
             <div class="producto-info">
                 <h3>${item.nombre}</h3>
