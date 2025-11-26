@@ -69,6 +69,16 @@
         </div>
     </section>
 
+    <script>
+        ["header", "footer"].forEach((id) =>
+            fetch(`${id}.html`)
+            .then((r) => r.text())
+            .then(
+                (html) => (document.getElementById(id).innerHTML = html)
+            )
+        );
+    </script>
+
 
 
 
