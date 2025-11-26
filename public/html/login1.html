@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <div id="header"></div>
     <section class="vh-100 gradient-custom">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -55,6 +57,19 @@
             </div>
         </div>
     </section>
+
+
+
+    <div id="footer"></div>
+    <script>
+        ["header", "footer"].forEach((id) =>
+            fetch(`${id}.html`)
+            .then((r) => r.text())
+            .then(
+                (html) => (document.getElementById(id).innerHTML = html)
+            )
+        );
+    </script>
 </body>
 
 </html>
