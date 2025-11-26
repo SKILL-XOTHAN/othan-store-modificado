@@ -101,23 +101,21 @@ function actualizarTotales(subtotal) {
 }
 
 // Proceder al pago
-document.getElementById('btn-comprar')?.addEventListener('click', function() {
-    const carrito = obtenerCarrito();
-    if (carrito.length === 0) return;
+const btnComprar = document.getElementById('btn-comprar');
 
-    const total = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
-    const envio = total > 50000 ? 0 : 2000;
-    const totalFinal = total + envio;
+if (btnComprar) {
+    btnComprar.addEventListener('click', function() {
+        const carrito = obtenerCarrito();
+        if (carrito.length === 0) return;
 
-    alert(`¡Gracias por tu compra!\n\nTotal a pagar: $${totalFinal.toLocaleString()}\n\nSerás redirigido a la página de pago...`);
-    
-    // Aquí puedes agregar la lógica para redirigir a una pasarela de pago
-    // window.location.href = 'pago.html';
-    
-    // Por ahora, vaciar el carrito después de "comprar"
-    // localStorage.removeItem('carritoOthan');
-    // renderizarCarrito();
-});
+        const total = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
+        const envio = total > 50000 ? 0 : 2000;
+        const totalFinal = total + envio;
+
+        alert(`¡Gracias por tu compra!\n\nTotal a pagar: $${totalFinal.toLocaleString()}\n\nSerás redirigido a la página de pago...`);
+    });
+}
+
 
 // Inicializar cuando la página carga
 document.addEventListener('DOMContentLoaded', function() {
@@ -130,10 +128,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // ====== FUNCIÓN PARA AGREGAR AL CARRITO (Desde producto.html) ======
 function agregarCarrito(nombre, precio, imagen = '') {
     const carrito = obtenerCarrito();
-    
+
     // Buscar si el producto ya existe
     const index = carrito.findIndex(item => item.nombre === nombre);
-    
+
     if (index !== -1) {
         // Si existe, aumentar cantidad
         carrito[index].cantidad++;
@@ -147,9 +145,9 @@ function agregarCarrito(nombre, precio, imagen = '') {
             talla: 'M'
         });
     }
-    
+
     guardarCarrito(carrito);
-    
+
     // Mostrar mensaje de confirmación
     mostrarMensaje(`✓ ${nombre} agregado al carrito`);
 }
