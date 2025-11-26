@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <div id="header"></div>
+
 
     <!-- NAV -->
     <nav class="filtros">
@@ -113,15 +112,6 @@
         </section>
 
 
-            <script>
-        ["header", "footer"].forEach((id) =>
-            fetch(`${id}.html`)
-            .then((r) => r.text())
-            .then(
-                (html) => (document.getElementById(id).innerHTML = html)
-            )
-        );
-    </script>
 
 
 
